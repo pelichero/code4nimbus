@@ -1,4 +1,5 @@
-(ns clojure-studies.domain-operations)
+(ns clojure-studies.playbook.domain-operations
+  (:require [clojure.spec.alpha :as s]))
 
 :Currency
 
@@ -55,10 +56,23 @@
             minor (mod amount divisor)]
         (str sign major "." minor)))))
 
+(def default-currency (:brl currencies))
+
 (defn make-money
   "takes an amount and a currency, creating a Money entity"
-  [amount currency]
-  (let [money {:amount amount
-               :currency currency}]
-    (-> money
-        (assoc :displayed (show-money money)))))
+  ([]                   {:amount 0
+                         :currency default-currency})
+  ([amount]             {:amount amount
+                         :currency default-currency})
+  ([amount currency]    {:amount amount
+                         :currency currency}))
+
+
+;(println (make-money 525 (:ukg currencies)))
+
+(s/def :money/amount int?)
+(s/def :currency/divisor int?)
+(s/def :currency/sign string?)
+(s/def :currency/desc string?)
+
+(s/def :currency/code (and string? #{"USD" "BRL" "UKG" ,,, }))

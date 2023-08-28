@@ -1,4 +1,4 @@
-(ns clojure-studies.insane)
+(ns clojure-studies.playbook.insane)
 
 (def products [{:id          1
                 :name        "Kettle"

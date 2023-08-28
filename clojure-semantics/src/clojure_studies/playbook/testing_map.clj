@@ -1,4 +1,4 @@
-(ns clojure-studies.testing-map)
+(ns clojure-studies.playbook.testing-map)
 
 (def products {
                :tv       1000.1

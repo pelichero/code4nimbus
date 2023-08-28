@@ -1,4 +1,4 @@
-(ns clojure-studies.testing-map-destruct)
+(ns clojure-studies.playbook.testing-map-destruct)
 (def products {
                :chair {:price 1000 :qtd 2}
                :table {:price 1000 :qtd 2}})

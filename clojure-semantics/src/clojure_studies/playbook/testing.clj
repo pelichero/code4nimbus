@@ -1,4 +1,4 @@
-(ns clojure-studies.testing)
+(ns clojure-studies.playbook.testing)
 
 
 (def prices [20 40 50])

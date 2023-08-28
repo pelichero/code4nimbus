@@ -1,4 +1,4 @@
-(ns clojure-studies.trilha_clojure)
+(ns clojure-studies.playbook.trilha_clojure)
 (defn hello-world
   [name]
   (str "Hello " name)

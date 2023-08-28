@@ -1,4 +1,4 @@
-(ns clojure-studies.records)
+(ns clojure-studies.playbook.records)
 
 { :customer-id 12345
  :first-name  "Maria"
