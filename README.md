@@ -1,4 +1,4 @@
-# Monorepo GitHub Project: Learning Path for Clojure, Docker, and Kafka
+# Monorepo GitHub Project: Learning Path for Clojure
 
 Welcome to the Monorepo GitHub project dedicated to studying and exploring the fascinating worlds of Clojure, Docker, and Kafka technologies. This repository serves as a comprehensive learning path for anyone looking to gain proficiency in these technologies. Whether you're a beginner taking your first steps or an experienced developer expanding your skillset, this repository has something for you.
 
