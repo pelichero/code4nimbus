@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/clojure-simple-http/clojure-simple-http.iml" filepath="$PROJECT_DIR$/clojure-simple-http/clojure-simple-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/code4nimbus.iml" filepath="$PROJECT_DIR$/.idea/code4nimbus.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecommerce/ecommerce.iml" filepath="$PROJECT_DIR$/ecommerce/ecommerce.iml" />
     </modules>
