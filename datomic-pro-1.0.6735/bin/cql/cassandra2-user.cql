@@ -1,0 +1,5 @@
+-- DROP USER datomic2
+
+CREATE USER datomic2 WITH PASSWORD 'datomic' NOSUPERUSER;
+
+GRANT ALL ON KEYSPACE datomic2 TO datomic2;
