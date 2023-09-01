@@ -5,74 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f7a56e4-8fbd-4140-bbe7-d3532582ba2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ClojureProjectResolveSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/code4nimbus.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clout_2_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_datomic_free_0_9_5697.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_datomic_lucene_core_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_guava_guava_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_h2database_h2_1_3_171.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_beanutils_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_collections_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_fileupload_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_io_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_equality_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_random_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__http_kit_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__instaparse_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_all_4_0_39_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__javax_xml_bind_jaxb_api_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__medley_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__nrepl_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_activemq_artemis_commons_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_activemq_artemis_core_client_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_geronimo_specs_geronimo_json_1_0_spec_1_0_alpha_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_johnzon_johnzon_core_0_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_jdbc_7_0_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_juli_7_0_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_3_218.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_cli_0_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_macro_0_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_jdk_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_fressian_fressian_0_6_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_nrepl_incomplete_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_jcl_over_slf4j_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_jul_to_slf4j_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_log4j_over_slf4j_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_slf4j_nop_1_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_codec_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_core_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/ClojureProjectResolveSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/libraries/Leiningen__nrepl_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/libraries/Leiningen__org_clojure_clojure_1_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_62.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_3_218.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/libraries/Leiningen__org_nrepl_incomplete_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-semantics/clojure-semantics.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datomic/datomic-console/.credentials" beforeDir="false" afterPath="$PROJECT_DIR$/datomic/datomic-console/.credentials" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datomic/datomic-console/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/datomic/datomic-console/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datomic/datomic-pro-starter/.credentials" beforeDir="false" afterPath="$PROJECT_DIR$/datomic/datomic-pro-starter/.credentials" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datomic/datomic-pro-starter/config/dev-transactor.properties" beforeDir="false" afterPath="$PROJECT_DIR$/datomic/datomic-pro-starter/config/dev-transactor.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datomic/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/datomic/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +34,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/felipe.pelichero/Documents/projects/studies/code4nimbus",
+    "last_opened_file_path": "/Users/felipe.pelichero/Documents/projects/studies/code4nimbus/datomic-free",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31024668",
@@ -107,11 +48,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datomic-free" />
       <recent name="$PROJECT_DIR$/clojure-simple-http" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datomic" />
     </key>
   </component>
   <component name="ReplState" timestamp="1693513829429">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.clojure-simple-http: Compose Deployment">
+  <component name="RunManager" selected="Docker.datomic: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -122,16 +67,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="REPL for clojure-simple-http" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
-      <option name="configVersion" value="1" />
-      <option name="displayName" value="REPL for clojure-simple-http" />
-      <option name="execution" value="LEININGEN" />
-      <module name="clojure-simple-http" />
-      <option name="options" />
-      <option name="profiles" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clojure-simple-http" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <option name="configVersion" value="1" />
@@ -228,6 +163,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="datomic-free: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="datomic/datomic-free/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="datomic: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -238,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.clojure-simple-http: Compose Deployment" />
-        <item itemvalue="Docker.clojure-simple-http/Dockerfile" />
-        <item itemvalue="Clojure Application.clojure-simple-http.core" />
-        <item itemvalue="Clojure REPL.REPL for clojure-simple-http" />
         <item itemvalue="Docker.datomic: Compose Deployment" />
+        <item itemvalue="Docker.datomic-free: Compose Deployment" />
+        <item itemvalue="Docker.clojure-simple-http/Dockerfile" />
+        <item itemvalue="Docker.clojure-simple-http: Compose Deployment" />
+        <item itemvalue="Clojure Application.clojure-simple-http.core" />
       </list>
     </recent_temporary>
   </component>
