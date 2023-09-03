@@ -1,0 +1,15 @@
+services:
+  datomicdb:
+    build: datomic-db
+    ports:
+      - "4336:4336"
+      - "4335:4335"
+      - "4334:4334"
+    volumes:
+      - "/data"
+  datomic-console:
+    build: datomic-console
+    ports:
+      - "8080:8080"
+    links:
+      - datomicdb
