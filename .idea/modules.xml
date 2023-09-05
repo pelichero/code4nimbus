@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/clojure-semantics/clojure-semantics.iml" filepath="$PROJECT_DIR$/clojure-semantics/clojure-semantics.iml" />
       <module fileurl="file://$PROJECT_DIR$/clojure-simple-http/clojure-simple-http.iml" filepath="$PROJECT_DIR$/clojure-simple-http/clojure-simple-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/code4nimbus.iml" filepath="$PROJECT_DIR$/code4nimbus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datomic/datomic.iml" filepath="$PROJECT_DIR$/datomic/datomic.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecommerce/ecommerce.iml" filepath="$PROJECT_DIR$/ecommerce/ecommerce.iml" />
     </modules>
   </component>

@@ -1,7 +1,23 @@
-FROM openjdk:11
+FROM openjdk:11 as base
 
-COPY .. /datomic
+ENV DATOMIC_VERSION 1.0.6735
 
-EXPOSE 4334 4335 4336
+RUN wget https://datomic-pro-downloads.s3.amazonaws.com/1.0.6735/datomic-pro-${DATOMIC_VERSION}.zip -qO /tmp/datomic.zip \
+  && unzip /tmp/datomic.zip \
+  && rm /tmp/datomic.zip \
+  && mv /datomic-pro-${DATOMIC_VERSION} /datomic
 
-CMD ["/datomic/datomic-pro-1.0.6735/bin/transactor config/samples/dev-transactor-template.properties"]
+WORKDIR /datomic
+
+RUN cp config/samples/dev-transactor-template.properties transactor.properties
+
+RUN sed "s/host=localhost/host=0.0.0.0/" -i transactor.properties
+RUN sed "s/# storage-access=local/storage-access=remote/" -i transactor.properties
+RUN sed "s/# storage-datomic-password=/storage-datomic-password=datomic/" -i transactor.properties
+RUN sed "s/# storage-admin-password=/storage-admin-password=admin/" -i transactor.properties
+
+CMD ["bin/transactor", "transactor.properties"]
+
+EXPOSE 4334
+EXPOSE 4335
+EXPOSE 4336
