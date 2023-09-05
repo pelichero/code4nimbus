@@ -1,6 +1,9 @@
 services:
   datomicdb:
     build: datomic-db
+    environment:
+      - ADMIN_PASSWORD=admin
+      - DATOMIC_PASSWORD=datomic
     ports:
       - "4336:4336"
       - "4335:4335"
@@ -9,6 +12,9 @@ services:
       - "/data"
   datomic-console:
     build: datomic-console
+    environment:
+      - ADMIN_PASSWORD=admin
+      - DATOMIC_PASSWORD=datomic
     ports:
       - "8080:8080"
     links:
