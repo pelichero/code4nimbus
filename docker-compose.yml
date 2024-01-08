@@ -1,0 +1,17 @@
+services:
+  datomic-database:
+    build:
+      context: datomic-starter/src
+      args:
+        datomic_version: 1.0.6726
+    ports:
+      - "4334:4334"
+      - "4335:4335"
+      - "4336:4336"
+      - "4337:4337"
+      - "9000:8080"
+
+  server-app:
+    build: clojure-simple-http
+    ports:
+      - "8888:8080"

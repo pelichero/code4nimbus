@@ -1,5 +1,0 @@
-services:
-  server-app:
-    build: .
-    ports:
-      - "8888:8080"
