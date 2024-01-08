@@ -1,5 +1,4 @@
-FROM java:8-alpine
-MAINTAINER Mate Magyari <mate.magyari@gmail.com>
+FROM openjdk:8
 
 ADD target/clojure-pedestal-example-0.0.1-SNAPSHOT-standalone.jar /clojure-pedestal-example/app.jar
 
