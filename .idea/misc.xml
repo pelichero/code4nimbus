@@ -1,3 +1,10 @@
 <project version="4">
+  <component name="LeiningenProjectsManager">
+    <option name="projectFiles">
+      <set>
+        <option value="file://$PROJECT_DIR$/clojure-simple-http/project.clj" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

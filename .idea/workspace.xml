@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f7a56e4-8fbd-4140-bbe7-d3532582ba2e" name="Changes" comment="" />
+    <list default="true" id="3f7a56e4-8fbd-4140-bbe7-d3532582ba2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,15 +34,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/fepelichero/Documents/projects/monorepo/code4nimbus",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31024668",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/my-datomic-dockerized/datomic-console" />
       <recent name="$PROJECT_DIR$/my-datomic-dockerized" />
       <recent name="$PROJECT_DIR$/datomic-free" />
@@ -53,7 +59,7 @@
       <recent name="$PROJECT_DIR$/docker-datomic-example/datomic-pro-starter" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1693513829429">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1693882196111">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Docker.my-datomic-dockerized: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
@@ -65,6 +71,16 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="REPL for clojure-simple-http" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <option name="configVersion" value="1" />
+      <option name="displayName" value="REPL for clojure-simple-http" />
+      <option name="execution" value="LEININGEN" />
+      <module name="clojure-simple-http" />
+      <option name="options" />
+      <option name="profiles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clojure-simple-http" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <option name="configVersion" value="1" />
@@ -143,18 +159,10 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="datomic-free: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="datomic/datomic-free/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="datomic: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="datomic/docker-compose.yml" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -178,12 +186,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.my-datomic-dockerized: Compose Deployment" />
-        <item itemvalue="Docker.datomic-db/Dockerfile: Compose Deployment" />
         <item itemvalue="Docker.docker-datomic-example: Compose Deployment" />
-        <item itemvalue="Docker.datomic: Compose Deployment" />
-        <item itemvalue="Docker.datomic-free: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.datomic-db/Dockerfile: Compose Deployment" />
+        <item itemvalue="Clojure REPL.REPL for clojure-simple-http" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-8336523bb0d9-641c9356" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -242,5 +257,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

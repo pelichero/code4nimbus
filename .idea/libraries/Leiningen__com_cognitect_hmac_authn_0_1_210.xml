@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.cognitect/hmac-authn:0.1.210">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cognitect/hmac-authn/0.1.210/hmac-authn-0.1.210.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

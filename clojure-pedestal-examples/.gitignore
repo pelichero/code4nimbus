@@ -1,0 +1,10 @@
+# Intellij specific
+.idea/
+.DS_Store
+.vscode
+*.iml
+
+logs/
+.nrepl-port
+target/
+resources/
