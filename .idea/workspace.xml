@@ -5,95 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f7a56e4-8fbd-4140-bbe7-d3532582ba2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_datomic_pro_0_9_57.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-simple-http/src/http/crud.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_anomalies_0_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_hmac_authn_0_1_210.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_http_client_1_0_111.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_clj_1_0_329.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_transit_java_1_0_362.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_client_1_0_131.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_client_api_1_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_client_impl_shared_1_0_99.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_client_pro_1_0_76.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_query_support_0_8_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_11_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_async_1_5_648.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_cache_1_0_225.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_memoize_1_0_253.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_44.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_62.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_data_priority_map_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_176.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_3_218.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_jvm_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_reader_1_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_client_9_4_44_v20210927.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_http_9_4_44_v20210927.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_io_9_4_44_v20210927.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_eclipse_jetty_jetty_util_9_4_44_v20210927.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_msgpack_msgpack_0_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_ow2_asm_asm_9_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-simple-http/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/doc/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/ecommerce.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/project.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/ecommerce/core.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/test/ecommerce/core_test.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/ClojureProjectResolveSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_amazonaws_aws_java_sdk_core_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_amazonaws_aws_java_sdk_ec2_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_datomic_datomic_lucene_core_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_datomic_memcache_asg_java_client_1_1_0_35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_datomic_peer_1_0_6735.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_datomic_query_stats_1_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_datomic_query_support_0_8_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_6_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_databind_2_6_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_6_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_github_ben_manes_caffeine_caffeine_3_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_google_errorprone_error_prone_annotations_2_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__com_h2database_h2_2_1_214.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__commons_beanutils_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__commons_codec_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__commons_logging_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_buffer_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_codec_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_codec_http_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_codec_socks_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_common_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_handler_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_handler_proxy_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_resolver_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_classes_epoll_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_classes_kqueue_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_native_epoll_4_1_86_Final_linux_x86_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_native_kqueue_4_1_86_Final_osx_x86_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__io_netty_netty_transport_native_unix_common_4_1_86_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__joda_time_2_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__nrepl_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_activemq_artemis_commons_2_28_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_activemq_artemis_core_client_2_28_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_httpcomponents_httpclient_4_5_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_httpcomponents_httpcore_4_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_jdbc_7_0_109.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_juli_7_0_109.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_checkerframework_checker_qual_3_32_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_clojure_clojure_1_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_56.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_194.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_clojure_tools_cli_1_0_206.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_3_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_jdk_3_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_fressian_fressian_0_6_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_nrepl_incomplete_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_slf4j_jcl_over_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_slf4j_log4j_over_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/libraries/Leiningen__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/examples/clj/datomic/samples/mbrainz.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/examples/java/datomic/samples/Mbrainz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/mbrainz-sample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/project.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/relationships.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/resources/rules.edn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/schema.edn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/schema.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/src/clj/datomic/samples/mbrainz/rules.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mbrainz-sample/src/clj/datomic/samples/query.clj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-simple-http/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-simple-http/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-simple-http/src/http/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-simple-http/src/http/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,22 +67,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fepelichero/Documents/projects/monorepo/code4nimbus&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31024668&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Clojure REPL.REPL for clojure-simple-http.executor": "Debug",
+    "Docker.docker-compose.yml.datomic-database: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.server-app: Compose Deployment.executor": "Run",
+    "Leiningen.Leiningen.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cursive.last.file.extension./Users/fepelichero/Documents/projects/monorepo/code4nimbus/clojure-simple-http/src": "clj",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/fepelichero/Documents/projects/monorepo/code4nimbus",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31024668",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -134,15 +97,15 @@
       <recent name="$PROJECT_DIR$/clojure-simple-http" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clojure-simple-http/src/http" />
+      <recent name="$PROJECT_DIR$/clojure-simple-http/src/datomic_shortcut" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/my-datomic-dockerized/datomic-db" />
       <recent name="$PROJECT_DIR$/my-datomic-dockerized" />
-      <recent name="$PROJECT_DIR$/datomic-pro-1.0.6735" />
-      <recent name="$PROJECT_DIR$/another-datomic" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1693882196111">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.my-datomic-dockerized: Compose Deployment">
+  <component name="ReplState" timestamp="1707009488797">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="RunManager" selected="Clojure REPL.REPL for clojure-simple-http">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -233,17 +196,27 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="datomic-db/Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
+    <configuration name="docker-compose.yml.datomic-database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="my-datomic-dockerized/datomic-db/Dockerfile" />
+          <option name="services">
+            <list>
+              <option value="datomic-database" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.server-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="services">
+            <list>
+              <option value="server-app" />
+            </list>
+          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -267,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Clojure REPL.REPL for clojure-simple-http" />
+        <item itemvalue="Docker.docker-compose.yml.server-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.datomic-database: Compose Deployment" />
         <item itemvalue="Docker.my-datomic-dockerized: Compose Deployment" />
         <item itemvalue="Docker.docker-datomic-example: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.datomic-db/Dockerfile: Compose Deployment" />
-        <item itemvalue="Clojure REPL.REPL for clojure-simple-http" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +252,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-11.0.21-corretto-11.0.21-8336523bb0d9-641c9356" />
+        <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
       </set>
     </attachedChunks>
   </component>

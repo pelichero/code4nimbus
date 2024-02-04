@@ -1,6 +1,7 @@
 (ns http.core
   (:require [org.httpkit.server :refer [run-server]]
             [clj-time.core :as t]
+            [http.crud :as crud]
             [compojure.core :refer :all]
             [compojure.route :as route])
   (:gen-class))
@@ -16,10 +17,17 @@
 
 ; returns current date.
 (defn get-date
-  [greet-name]
+  []
   (let [response {:status  200
                   :headers {"Content-Type" "text/html"}
                   :body    (str (.getTime (java.util.Date.)))}]
+    response))
+
+(defn datomic
+  []
+  (let [response {:status  200
+                  :headers {"Content-Type" "text/html"}
+                  :body    (str (crud/db-after-create))}]
     response))
 
 ; define routes.
@@ -27,6 +35,7 @@
            (GET "/" [] "<h1>Welcome</h1>")
            (GET "/get-time" [] (get-time))
            (GET "/get-date" [] (get-date))
+           (GET "/datomic" [] (datomic))
            (route/not-found "<h1>Page not found</h1>"))
 
 ; starting point of server.
