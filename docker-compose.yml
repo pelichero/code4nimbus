@@ -9,7 +9,7 @@ services:
       - "4335:4335"
       - "4336:4336"
       - "4337:4337"
-      - "9000:8080"
+      - "8080:8080"
 
   server-app:
     build: clojure-simple-http

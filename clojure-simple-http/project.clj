@@ -8,7 +8,7 @@
                  [clj-time "0.14.0"]
                  [compojure "1.6.0"]
                  [javax.xml.bind/jaxb-api "2.3.0"]
-                 [com.datomic/datomic-free "0.9.5697"]]
+                 [com.datomic/datomic-pro "0.9.5951"]]
   :profiles {:uberjar {:aot [http.core]}}
   :main http.core
   :aot [http.core])

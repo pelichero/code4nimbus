@@ -1,7 +1,7 @@
 (ns http.core
   (:require [org.httpkit.server :refer [run-server]]
             [clj-time.core :as t]
-            [http.crud :as crud]
+            ;[http.crud :as crud]
             [compojure.core :refer :all]
             [compojure.route :as route])
   (:gen-class))
@@ -27,7 +27,8 @@
   []
   (let [response {:status  200
                   :headers {"Content-Type" "text/html"}
-                  :body    (str (crud/db-after-create))}]
+                  :body          ""                           ;;(str (crud/db-after-create))
+                  }]
     response))
 
 ; define routes.
