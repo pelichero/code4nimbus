@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.datomic/java-io:0.1.29">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/datomic/java-io/0.1.29/java-io-0.1.29.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

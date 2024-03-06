@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: com.datomic/java-io:0.1.23">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/datomic/java-io/0.1.23/java-io-0.1.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
