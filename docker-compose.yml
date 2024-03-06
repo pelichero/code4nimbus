@@ -1,19 +1,31 @@
 services:
-  datomic-database:
-    build:
-      context: datomic-starter/src
-      args:
-        datomic_version: 1.0.6726
+
+  datomic-transactor:
+    build: datomic-database/docker/transactor
+    environment:
+      BOOT_CONFIG_EDN: /usr/config/dev/config.edn
+    volumes:
+      - ./datomic-database/config:/usr/config
     ports:
-      - "4334:4334"
-      - "4335:4335"
-      - "4336:4336"
-      - "4337:4337"
-      - "8080:8080"
+      - '4334:4334'
+
+  datomic-console:
+    build: datomic-database/docker/console
+    links:
+      - datomic-transactor
+    environment:
+      DB_URI: datomic:dev://datomic-transactor:4334/?password=unsafe
+    ports:
+      - '8080:8080'
 
   server-app:
-    build: clojure-simple-http
+    build: clojure-api
     ports:
-      - "8888:8080"
-    depends_on:
-      - datomic-database
+      - "8888:9000"
+    links:
+      - datomic-transactor
+
+  datomic-tools:
+    build: datomic-database/docker/tools
+    links:
+      - datomic-transactor

@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <wildcardResourcePatterns>
       <entry name="!dev-resources:*" />
+      <entry name="!resource:*" />
       <entry name="!resources:*" />
       <entry name="!?*.java" />
       <entry name="!?*.form" />
