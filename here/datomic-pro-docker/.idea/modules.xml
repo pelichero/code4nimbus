@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/datomic-pro-docker.iml" filepath="$PROJECT_DIR$/.idea/datomic-pro-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker/tools/tools.iml" filepath="$PROJECT_DIR$/docker/tools/tools.iml" />
+    </modules>
+  </component>
+</project>

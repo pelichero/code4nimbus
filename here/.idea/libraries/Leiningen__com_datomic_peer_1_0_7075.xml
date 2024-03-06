@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.datomic/peer:1.0.7075">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/datomic/peer/1.0.7075/peer-1.0.7075.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
