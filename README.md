@@ -44,22 +44,6 @@ To restore a backup of the [MusicBrainz](https://musicbrainz.org) Sample Databas
 docker compose run datomic-tools ./bin/datomic restore-db file:/usr/mbrainz-1968-1973 "datomic:dev://datomic-transactor:4334/my-datomic?password=unsafe"
 ````
 
-### PostgreSQL
-
-Official Documentation [Provisioning a SQL database](https://docs.datomic.com/pro/overview/storage.html#sql-database)
-
-Copy the Docker Compose file:
-
-```sh
-cp compose/postgresql.yml docker-compose.yml
-```
-
-Run the Datomic Storage Service (PostgreSQL):
-
-```sh
-docker compose up datomic-storage
-```
-
 Create the table for Datomic:
 
 ```sh
