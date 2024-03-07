@@ -82,9 +82,6 @@ Require the API and set the appropriate `db-uri`:
 
 ; If you are using Dev Mode:
 (def db-uri "datomic:dev://datomic-transactor:4334/my-datomic/?password=unsafe")
-
-; If you are using PostgreSQL:
-(def db-uri "datomic:sql://?jdbc:postgresql://datomic-storage:5432/my-datomic?user=datomic-user&password=unsafe")
 ```
 
 If you have restored a backup of the [MusicBrainz](https://musicbrainz.org) sample database:
