@@ -44,26 +44,6 @@ To restore a backup of the [MusicBrainz](https://musicbrainz.org) Sample Databas
 docker compose run datomic-tools ./bin/datomic restore-db file:/usr/mbrainz-1968-1973 "datomic:dev://datomic-transactor:4334/my-datomic?password=unsafe"
 ````
 
-Create the table for Datomic:
-
-```sh
-docker compose run datomic-tools psql -f bin/sql/postgres-table.sql -h datomic-storage -U datomic-user -d my-datomic
-```
-
-You will be prompted for a password, which is `unsafe`.
-
-Run the Datomic Transactor:
-
-```sh
-docker compose up datomic-transactor
-```
-
-To restore a backup of the [MusicBrainz](https://musicbrainz.org) Sample Database:
-
-```sh
-docker compose run datomic-tools ./bin/datomic restore-db file:/usr/mbrainz-1968-1973 "datomic:sql://?jdbc:postgresql://datomic-storage:5432/my-datomic?user=datomic-user&password=unsafe"
-````
-
 ## Web Application
 
 To run the Datomic Peer Server and a web application:
