@@ -1,9 +1,11 @@
 # Clojure and Datomic Studies with Docker and Kafka
 
-![Clojure Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/256px-Clojure_logo.svg.png?20161016020557)
-![Datomic Icon](https://www.datomic.com/images/datomic-logo-290x230.png)
-![Docker Icon](https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png)
-![Kafka Icon](https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_kafka_logo_icon_167866.png)
+<p align="center">
+    <img alt="Clojure Icon" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/256px-Clojure_logo.svg.png?20161016020557" width="50"/>
+    <img alt="Datomic Icon" height="50" src="https://www.datomic.com/images/datomic-logo-290x230.png" width="60"/>
+    <img alt="Docker Icon" height="50" src="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png" width="60"/>
+    <img alt="Kafka Icon" height="50" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_kafka_logo_icon_167866.png" width="100"/>
+</p>
 
 Welcome to my monorepo project dedicated to exploring Clojure and Datomic while leveraging Docker and Kafka technologies. This repository documents my study path and progress as I delve into these exciting areas of software development.
 
@@ -19,7 +21,7 @@ The repository is organized into the following sections:
 
 - [Storage Services and Transactor](#storage-services-and-transactor)
    - [Dev Mode](#dev-mode)
-   - [PostgreSQL](#postgresql)
+- [Web Application](#web-application)
 - [Tools and Utilities](#tools-and-utilities)
    - [Datomic Console](#datomic-console)
    - [REPL](#repl)
