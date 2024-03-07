@@ -14,7 +14,7 @@ The repository is organized into the following sections:
 - `clojure-api`: Contains Web API projects built with Clojure.
 - `datomic-datbase`: Includes a sample Datomic database and tools to interact with it.
 
-# How to use put thing up!.
+# How to put thing up!.
 
 
 - [Storage Services and Transactor](#storage-services-and-transactor)
