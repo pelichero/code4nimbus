@@ -10,7 +10,7 @@
                       :db/cardinality :db.cardinality/one
                       :db/doc         "Path to access this product via HTTP"}
                      {:db/ident       :product/price
-                      :db/valueType   :db.type/bigdec
+                      :db/valueType   :db.type/int
                       :db/cardinality :db.cardinality/one
                       :db/doc         "Product price"}])
 

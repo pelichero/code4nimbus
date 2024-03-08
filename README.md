@@ -54,6 +54,10 @@ To run the Datomic Peer Server and a web application:
 docker compose up server-app
 ```
 
+You can access the swagger UI through the following link:
+
+http://localhost:8888/swagger
+
 ## Tools and Utilities
 
 ### Datomic Console

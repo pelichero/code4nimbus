@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clojure-api/src/http/product.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clout_2_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_fileupload_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__instaparse_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_ow2_asm_asm_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_codec_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_core_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/project.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/product.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +80,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1709899848443">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1709900233707">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Docker.docker-compose.yml.server-app: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />

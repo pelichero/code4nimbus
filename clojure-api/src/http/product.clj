@@ -1,7 +1,6 @@
 (ns http.product
   (:require [compojure.api.sweet :refer [GET POST]]
             [http.crud :as crud]
-            [clojure.core :refer :all]
             [schema.core :as s])
   (:use [clojure.pprint]))
 (import java.util.Date)
@@ -9,7 +8,7 @@
 (s/defschema ProductRequestSchema
   {:name  s/Str
    :slug  s/Str
-   :price bigdec})
+   :price s/Num})
 
 (defn ^:private add-product
   [{:keys [name slug price]}]
