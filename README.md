@@ -203,3 +203,6 @@ Contributions to this repository are welcome! Feel free to submit pull requests 
 
 Icons made by [Iconfinder](https://www.iconfinder.com/) and [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/).
 
+## References
+
+https://github.com/demystifyfp/BlogSamples/blob/0.10/clojure/resultful-crud/src/resultful_crud/core.clj
