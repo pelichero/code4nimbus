@@ -1,8 +1,8 @@
-(ns http.core
+(ns com.code4nimbus.clojureapi.core
   (:require [compojure.api.sweet :refer [api routes]]
-            [http.product :refer [product-routes]]
+            [com.code4nimbus.clojureapi.diplomat.product :refer [product-routes]]
             [org.httpkit.server :refer [run-server]]
-            [http.db :as db])
+            [com.code4nimbus.clojureapi.datomic.db :as db])
   (:use [clojure.pprint])
   (:gen-class))
 

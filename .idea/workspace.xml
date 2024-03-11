@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/model/product.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/crud.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/crud.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/db.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/crud.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/model.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/wire/in/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/test/http/core_test.clj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -68,7 +72,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus",
+    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src/com/code4nimbus/clojureapi/controller",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -76,12 +80,18 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/clojure-api/docker" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/clojure-api/test" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/model" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1710156661565">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1710159403087">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Docker.docker-compose.yml.server-app: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />

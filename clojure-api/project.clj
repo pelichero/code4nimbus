@@ -9,6 +9,6 @@
                  [metosin/compojure-api "2.0.0-alpha26"]
                  [javax.xml.bind/jaxb-api "2.3.0"]
                  [com.datomic/peer "1.0.7075"]]
-  :profiles {:uberjar {:aot [http.core]}}
-  :main http.core
-  :aot [http.core])
+  :profiles {:uberjar {:aot [com.code4nimbus.clojureapi.core]}}
+  :main com.code4nimbus.clojureapi.core
+  :aot [com.code4nimbus.clojureapi.core])
