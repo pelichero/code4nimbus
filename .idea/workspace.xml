@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/http/crud.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/crud.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/http/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/db.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/http/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/http/product.clj" afterDir="false" />
     </list>
@@ -71,7 +72,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "DepsSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,7 +81,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1709900233707">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1710156661565">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Docker.docker-compose.yml.server-app: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
@@ -203,9 +204,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml.server-app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Clojure REPL.REPL for clojure-simple-http" />
         <item itemvalue="Docker.docker-compose.yml.datomic-transactor: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
