@@ -20,4 +20,4 @@
   (db/create-database)
   (db/create-schema)
   (run-server app {:port 9000})
-  (println "Server started on port 8080"))
+  (println "Server started on port 9000"))

@@ -165,7 +165,6 @@ Dependencies reference:
 
 - [org.clojure/clojure](https://central.sonatype.com/artifact/org.clojure/clojure/overview)
 - [com.datomic/peer](https://central.sonatype.com/artifact/com.datomic/peer/overview)
-- [org.postgresql/postgresql](https://central.sonatype.com/artifact/org.postgresql/postgresql)
 - [com.bhauman/rebel-readline](https://clojars.org/com.bhauman/rebel-readline)
 
 

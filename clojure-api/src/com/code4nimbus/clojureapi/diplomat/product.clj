@@ -15,14 +15,13 @@
    :headers {"Content-Type" "text/html"}
    :body    (-> (adapters.product/wire->model product)
                 (controller.product/add! conn)
-                str)})                                      ;TODO create wire.out
+                str)})
 
 (s/defn ^:private list-products
   [conn]
-  (let [response {:status  200
-                  :headers {"Content-Type" "text/html"}
-                  :body    (str (controller.product/get-all conn))}]
-    response))
+  {:status  200
+   :headers {"Content-Type" "text/html"}
+   :body    (str (controller.product/get-all conn))})
 
 (def product-routes
   [(GET "/products" []
