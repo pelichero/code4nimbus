@@ -1,5 +1,5 @@
 (ns com.code4nimbus.clojureapi.diplomat.product
-  (:require [compojure.api.sweet :refer [GET POST]]
+  (:require [compojure.api.sweet :refer :all]
             [com.code4nimbus.clojureapi.controller.product :as controller.product]
             [com.code4nimbus.clojureapi.wire.in.product :as wire.in.product]
             [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
@@ -8,7 +8,7 @@
   (:use [clojure.pprint]))
 (import java.util.Date)
 
-(s/defn ^:private add-product
+(s/defn ^:private add!
   [conn
    product :- wire.in.product/Product]
   {:status  200
@@ -17,15 +17,25 @@
                 (controller.product/add! conn)
                 str)})
 
-(s/defn ^:private list-products
+(s/defn ^:private get-all
   [conn]
   {:status  200
    :headers {"Content-Type" "text/html"}
    :body    (str (controller.product/get-all conn))})
 
+(s/defn ^:private by-params
+  [conn
+   name]
+  {:status  200
+   :headers {"Content-Type" "text/html"}
+   :body    (str (controller.product/by-name conn name))})
+
 (def product-routes
   [(GET "/products" []
-     (list-products (datomic.db/get-conn)))
+     (get-all (datomic.db/get-conn)))
+   (GET "/products-by-params" []                            ;TODO refactor (test)
+     :query-params [name :- (describe String "Products name.")]
+     (by-params (datomic.db/get-conn) name))
    (POST "/product" []
      :body [create-product-req wire.in.product/Product]
-     (add-product (datomic.db/get-conn) create-product-req))])
+     (add! (datomic.db/get-conn) create-product-req))])

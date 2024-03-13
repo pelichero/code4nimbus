@@ -10,5 +10,12 @@
 
 (s/defn get-all :- [model.product/Product]
   [conn]
-  (d/q '[:find ?name
-         :where [_ :product/name ?name]] (d/db conn)))
+  (d/q '[:find (pull ?product [*])
+         :where [?product :product/name]] (d/db conn)))
+
+(s/defn by-name :- (s/maybe [model.product/Product])
+  [conn
+   name]
+  (d/q '[:find (pull ?product [*])
+         :in $ ?name
+         :where [?product :product/name ?name]] (d/db conn) name))

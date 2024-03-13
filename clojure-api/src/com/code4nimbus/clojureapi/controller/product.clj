@@ -8,7 +8,12 @@
    conn]
   (repository.product/add! product conn))
 
-(defn get-all
+(s/defn get-all :- [model.product/Product]
   [conn]
   (repository.product/get-all conn))
 
+(s/defn by-name :- (s/maybe [model.product/Product])
+  [conn
+   name]
+  (print name)
+  (repository.product/by-name conn name))
