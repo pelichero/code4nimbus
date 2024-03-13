@@ -13,9 +13,9 @@
    product :- wire.in.product/Product]
   {:status  200
    :headers {"Content-Type" "text/html"}
-   :body    (-> (adapters.product/wire->model product)
+   :body    (-> (adapters.product/wire->domain product)
                 (controller.product/add! conn)
-                str)})
+                (adapters.product/domain->wire))})
 
 (s/defn ^:private get-all
   [conn]
