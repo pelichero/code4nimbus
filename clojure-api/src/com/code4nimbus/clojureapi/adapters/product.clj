@@ -8,26 +8,29 @@
 ;TODO refactor it
 
 (s/defn wire->domain :- wire.out.product/Product
-  [{:keys [name slug price]} :- wire.in.product/Product]
+  [{:keys [name slug price] :as wire} :- wire.in.product/Product]
+  (println (str "wire->domain" wire))
   {:name  name
    :slug  slug
    :price price})
 
 (s/defn domain->wire :- wire.out.product/Product
-  [{:keys [name slug price]} :- domain.product/Product]
+  [{:keys [name slug price] :as domain} :- domain.product/Product]
+  (println (str "domain->wire" domain))
   {:name  name
    :slug  slug
    :price price})
 
 (s/defn domain->model :- models.product/Product
-  [{:keys [name slug price]} :- domain.product/Product]
+  [{:keys [name slug price] :as domain} :- domain.product/Product]
+  (println (str "domain->model" domain))
   {:product/name  name
    :product/slug  slug
    :product/price price})
 
 (s/defn model->domain :- domain.product/Product
   [model :- models.product/Product]
-  (println model)
+  (println (str "model->domain" model))
   {:name  (:product/name model)
    :slug  (:product/slug model)
    :price (:product/price model)})

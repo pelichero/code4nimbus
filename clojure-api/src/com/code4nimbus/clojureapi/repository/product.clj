@@ -3,10 +3,20 @@
             [schema.core :as s]
             [com.code4nimbus.clojureapi.model.product :as model.product]))
 
+(s/defn ^:private ->transaction
+  [product :- model.product/Product]
+  (assoc product
+    :db/id (d/tempid :db.part/user)))
+
 (s/defn add! :- model.product/Product
   [product :- model.product/Product
    conn]
-  (d/transact conn [product]))
+  (let [product (->transaction product)
+        temp-id (:db/id product)
+        post-tx @(d/transact conn [product])
+        db (:db-after post-tx)
+        entity-id (d/resolve-tempid db (:tempids post-tx) temp-id)]
+    (d/pull (d/db conn) '[*] entity-id)))
 
 (s/defn get-all :- [model.product/Product]
   [conn]

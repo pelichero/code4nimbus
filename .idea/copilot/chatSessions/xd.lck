@@ -1,4 +1,4 @@
-Private property of Exodus: 64690@Felipes-MBP-3
+Private property of Exodus: 84060@Felipes-MBP-3
 
 jetbrains.exodus.io.LockingManager.lock(LockingManager.kt:88)
 jetbrains.exodus.io.LockingManager.lock(LockingManager.kt:39)
@@ -40,7 +40,7 @@ com.intellij.toolWindow.ToolWindowSetInitializer$createAndLayoutToolWindows$entr
 kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
 kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
 kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
-com.intellij.platform.diagnostic.telemetry.impl.TracerKt.span(tracer.kt:53)
+com.intellij.platform.diagnostic.telemetry.impl.TracerKt.span(tracer.kt:56)
 com.intellij.platform.diagnostic.telemetry.impl.TracerKt.span$default(tracer.kt:49)
 com.intellij.toolWindow.ToolWindowSetInitializer$createAndLayoutToolWindows$entries$1.invokeSuspend(ToolWindowSetInitializer.kt:138)
 kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
