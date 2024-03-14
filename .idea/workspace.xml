@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/repository/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/repository/product.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

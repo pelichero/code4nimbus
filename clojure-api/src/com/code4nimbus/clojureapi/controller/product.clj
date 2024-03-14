@@ -11,15 +11,21 @@
       (repository.product/add! conn)
       (adapters.product/model->domain)))
 
+(s/defn ^:private entities->domain
+  [entities]
+  (map (fn [product]
+         (adapters.product/model->domain (into {} product)))
+       entities))
+
 (s/defn get-all :- [domain.product/Product]
   [conn]
-  (map (fn [product]
-         (adapters.product/model->domain product))
-       (repository.product/get-all conn)))
+  (let [products (-> (repository.product/get-all conn)
+                     (entities->domain))]
+    (doall products)))
 
 (s/defn by-name :- (s/maybe [domain.product/Product])
   [conn
    name :- s/Str]
-  (map (fn [product]
-         (adapters.product/model->domain product))
-       (repository.product/by-name conn name)))
+  (let [products (-> (repository.product/by-name conn name)
+                     (entities->domain))]
+    (doall products)))

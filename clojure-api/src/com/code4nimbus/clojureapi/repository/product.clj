@@ -3,7 +3,7 @@
             [schema.core :as s]
             [com.code4nimbus.clojureapi.model.product :as model.product]))
 
-(s/defn ^:private ->transaction
+(s/defn ^:private ->transaction :- model.product/Product
   [product :- model.product/Product]
   (assoc product
     :db/id (d/tempid :db.part/user)))

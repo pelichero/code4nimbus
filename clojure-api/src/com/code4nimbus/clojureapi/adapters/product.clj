@@ -29,8 +29,8 @@
    :product/price price})
 
 (s/defn model->domain :- domain.product/Product
-  [model :- models.product/Product]
-  (println (str "model->domain" model))
-  {:name  (:product/name model)
-   :slug  (:product/slug model)
-   :price (:product/price model)})
+  [{:product/keys [name slug price] :as model} :- models.product/Product]
+  (println (str ".model->domain" model))
+  {:name  name
+   :slug  slug
+   :price price})

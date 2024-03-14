@@ -19,16 +19,18 @@
 
 (s/defn ^:private get-all
   [conn]
-  {:status  200
-   :headers {"Content-Type" "text/html"}
-   :body    (str (controller.product/get-all conn))})
+  (let [products (controller.product/get-all conn)]
+    {:status  200
+     :headers {"Content-Type" "text/html"}
+     :body    (map adapters.product/domain->wire products)}))
 
 (s/defn ^:private by-params
   [conn
    name]
-  {:status  200
-   :headers {"Content-Type" "text/html"}
-   :body    (str (controller.product/by-name conn name))})
+  (let [products (controller.product/by-name conn name)]
+    {:status  200
+     :headers {"Content-Type" "text/html"}
+     :body    (map adapters.product/domain->wire products)}))
 
 (def product-routes
   [(GET "/products" []
