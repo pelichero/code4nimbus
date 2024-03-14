@@ -1,15 +1,31 @@
 (ns com.code4nimbus.clojureapi.controller.product
-  (:require [datomic.api :as d]
-            [schema.core :as s]
-            [com.code4nimbus.clojureapi.model.product :as model.product]))
+  (:require [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
+            [com.code4nimbus.clojureapi.domain.product :as domain.product]
+            [com.code4nimbus.clojureapi.repository.product :as repository.product]
+            [schema.core :as s]))
 
 (s/defn add!
-  [product :- model.product/Product
+  [product :- domain.product/Product
    conn]
-  (d/transact conn [product]))
+  (-> (adapters.product/domain->model product)
+      (repository.product/add! conn)
+      (adapters.product/model->domain)))
 
-(defn get-all
+(s/defn ^:private entities->domain
+  [entities]
+  (map (fn [product]
+         (adapters.product/model->domain (into {} product)))
+       entities))
+
+(s/defn get-all :- [domain.product/Product]
   [conn]
-  (d/q '[:find ?name
-         :where [_ :product/name ?name]] (d/db conn)))
+  (let [products (-> (repository.product/get-all conn)
+                     (entities->domain))]
+    (doall products)))
 
+(s/defn by-name :- (s/maybe [domain.product/Product])
+  [conn
+   name :- s/Str]
+  (let [products (-> (repository.product/by-name conn name)
+                     (entities->domain))]
+    (doall products)))

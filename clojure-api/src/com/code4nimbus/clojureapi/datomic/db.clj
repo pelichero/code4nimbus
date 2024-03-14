@@ -2,7 +2,7 @@
   (:require [datomic.api :as d]
             [com.code4nimbus.clojureapi.model.product :as model.product]))
 
-(def uri "datomic:dev://datomic-transactor:4334/product/?password=unsafe")
+(def uri (str (System/getenv "DATOMIC_URL")))
 
 (defn get-conn
   []

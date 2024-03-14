@@ -20,10 +20,12 @@ services:
 
   server-app:
     build: clojure-api
-    ports:
-      - "8888:9000"
     links:
       - datomic-transactor
+    environment:
+      DATOMIC_URL: datomic:dev://datomic-transactor:4334/product/?password=unsafe
+    ports:
+      - "8888:9000"
 
   datomic-tools:
     build: datomic-database/docker/tools
