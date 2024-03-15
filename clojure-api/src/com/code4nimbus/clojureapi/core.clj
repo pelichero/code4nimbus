@@ -2,8 +2,8 @@
   (:require [compojure.api.sweet :refer [api routes]]
             [com.code4nimbus.clojureapi.diplomat.product :refer [product-routes]]
             [org.httpkit.server :refer [run-server]]
+            [clojure.tools.logging :as log]
             [com.code4nimbus.clojureapi.datomic.db :as db])
-  (:use [clojure.pprint])
   (:gen-class))
 
 (def swagger-config
@@ -20,4 +20,4 @@
   (db/create-database)
   (db/create-schema)
   (run-server app {:port 9000})
-  (println "Server started on port 9000"))
+  (log/info "Server started on port 9000"))
