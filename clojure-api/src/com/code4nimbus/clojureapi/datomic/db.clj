@@ -1,6 +1,8 @@
 (ns com.code4nimbus.clojureapi.datomic.db
-  (:require [datomic.api :as d]
-            [com.code4nimbus.clojureapi.model.product :as model.product]))
+  (:require [clojure.tools.logging :as log]
+            [datomic.api :as d]
+            [com.code4nimbus.clojureapi.model.product :as model.product]
+            [clojure.tools.logging :as [clojure.tools.logging :as log]]))
 
 (def uri (str (System/getenv "DATOMIC_URL")))
 
@@ -11,20 +13,20 @@
 (defn create-database
   []
   (d/create-database uri)
-  (println "Database created"))
+  (log/info "Database created"))
 
 (defn drop-database
   []
   (try
     (d/delete-database uri)
-    (println "Database dropped")
-    (catch Exception _
-      (println "Database does not exist"))))
+    (log/info "Database dropped")
+    (catch Exception ex
+      (log/error "Database does not exist; ex: " ex))))
 
 (defn create-schema
   []
   (try
     (d/transact (d/connect uri) model.product/product-schema)
-    (println "Schema created")
+    (log/info "Schema created")
     (catch Exception error
-      (println (str "Error creating schema, ex: " error)))))
+      (log/error "Error creating schema, ex: " error))))
