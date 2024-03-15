@@ -1,8 +1,7 @@
 (ns com.code4nimbus.clojureapi.datomic.db
   (:require [clojure.tools.logging :as log]
             [datomic.api :as d]
-            [com.code4nimbus.clojureapi.model.product :as model.product]
-            [clojure.tools.logging :as [clojure.tools.logging :as log]]))
+            [com.code4nimbus.clojureapi.model.product :as model.product]))
 
 (def uri (str (System/getenv "DATOMIC_URL")))
 
