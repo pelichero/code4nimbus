@@ -5,8 +5,7 @@
             [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
             [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
             [clojure.data.json :as json]
-            [schema.core :as s])
-  (:use [clojure.pprint]))
+            [schema.core :as s]))
 (import java.util.Date)
 
 (s/defn ^:private add!
