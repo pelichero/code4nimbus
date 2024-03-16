@@ -14,9 +14,10 @@
    :price price})
 
 (s/defn domain->wire :- wire.out.product/Product
-  [{:keys [name slug price] :as domain} :- domain.product/Product]
+  [{:keys [id name slug price] :as domain} :- domain.product/Product]
   (log/info (str "domain->wire" domain))
-  {:name  name
+  {:id    id
+   :name  name
    :slug  slug
    :price price})
 
@@ -30,6 +31,7 @@
 (s/defn model->domain :- domain.product/Product
   [{:product/keys [name slug price] :as model} :- models.product/Product]
   (log/info (str ".model->domain" model))
-  {:name  name
+  {:id    (:db/id model)
+   :name  name
    :slug  slug
    :price price})

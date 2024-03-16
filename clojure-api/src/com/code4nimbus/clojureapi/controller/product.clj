@@ -2,6 +2,7 @@
   (:require [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
             [com.code4nimbus.clojureapi.domain.product :as domain.product]
             [com.code4nimbus.clojureapi.repository.product :as repository.product]
+            [clojure.tools.logging :as log]
             [schema.core :as s]))
 
 (s/defn add!
@@ -29,3 +30,11 @@
   (let [products (-> (repository.product/by-name conn name)
                      (entities->domain))]
     (doall products)))
+
+(s/defn by-id :- (s/maybe domain.product/Product)
+  [conn
+   id :- s/Int]
+  (let [product (repository.product/by-id conn id)]
+    (log/info product)
+    (when (not (nil? (:product/name product)))
+      (adapters.product/model->domain product))))

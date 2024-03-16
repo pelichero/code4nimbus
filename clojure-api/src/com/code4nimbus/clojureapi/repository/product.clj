@@ -23,7 +23,12 @@
   (d/q '[:find (pull ?product [*])
          :where [?product :product/name]] (d/db conn)))
 
-(s/defn by-name :- (s/maybe [model.product/Product])
+(s/defn by-id :- (s/maybe model.product/Product)
+  [conn
+   id :- Long]
+  (d/pull (d/db conn) '[*] id))
+
+  (s/defn by-name :- (s/maybe [model.product/Product])
   [conn
    name]
   (d/q '[:find (pull ?product [*])

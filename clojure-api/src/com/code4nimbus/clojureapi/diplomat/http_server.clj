@@ -1,4 +1,4 @@
-(ns com.code4nimbus.clojureapi.diplomat.product
+(ns com.code4nimbus.clojureapi.diplomat.http-server
   (:require [compojure.api.sweet :refer :all]
             [com.code4nimbus.clojureapi.controller.product :as controller.product]
             [com.code4nimbus.clojureapi.wire.in.product :as wire.in.product]
@@ -8,7 +8,7 @@
             [schema.core :as s]))
 (import java.util.Date)
 
-(s/defn ^:private add!
+(s/defn ^:private add-product!
   [conn
    product :- wire.in.product/Product]
   {:status  200
@@ -18,7 +18,7 @@
                 (adapters.product/domain->wire)
                 (json/write-str))})
 
-(s/defn ^:private get-all
+(s/defn ^:private get-all-products
   [conn]
   (let [products (controller.product/get-all conn)]
     {:status  200
@@ -26,7 +26,7 @@
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 
-(s/defn ^:private by-params
+(s/defn ^:private products-by-params
   [conn
    name]
   (let [products (controller.product/by-name conn name)]
@@ -35,12 +35,29 @@
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 
+(s/defn ^:private product-by-id
+  [conn
+   id]
+  (let [product (controller.product/by-id conn id)]
+    (cond (nil? product)
+          {:status  404
+           :headers {"Content-Type" "text/html"}
+           :body    "Product not found."}
+          :else
+          {:status  200
+           :headers {"Content-Type" "text/html"}
+           :body    (-> (adapters.product/domain->wire product)
+                        (json/write-str))})))
+
 (def product-routes
-  [(GET "/products" []
-     (get-all (datomic.db/get-conn)))
-   (GET "/products-by-params" []                            ;TODO refactor (test)
+  [(GET "/product/:id" []
+     :path-params [id :- Long]
+     (product-by-id (datomic.db/get-conn) id))
+   (GET "/products" []
+     (get-all-products (datomic.db/get-conn)))
+   (GET "/products-by-params" []
      :query-params [name :- (describe String "Products name.")]
-     (by-params (datomic.db/get-conn) name))
+     (products-by-params (datomic.db/get-conn) name))
    (POST "/product" []
      :body [create-product-req wire.in.product/Product]
-     (add! (datomic.db/get-conn) create-product-req))])
+     (add-product! (datomic.db/get-conn) create-product-req))])
