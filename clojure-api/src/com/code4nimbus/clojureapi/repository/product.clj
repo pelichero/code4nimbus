@@ -18,6 +18,13 @@
         entity-id (d/resolve-tempid db (:tempids post-tx) temp-id)]
     (d/pull (d/db conn) '[*] entity-id)))
 
+(s/defn update! :- model.product/Product
+  [product :- model.product/Product
+   conn]
+  (let [post-tx @(d/transact conn [product])
+        db (:db-after post-tx)]
+    (d/pull db '[*] (:db/id product))))
+
 (s/defn get-all :- [model.product/Product]
   [conn]
   (d/q '[:find (pull ?product [*])
@@ -28,9 +35,14 @@
    id :- Long]
   (d/pull (d/db conn) '[*] id))
 
-  (s/defn by-name :- (s/maybe [model.product/Product])
+(s/defn by-name :- (s/maybe [model.product/Product])
   [conn
    name]
   (d/q '[:find (pull ?product [*])
          :in $ ?name
          :where [?product :product/name ?name]] (d/db conn) name))
+
+(s/defn delete!
+  [conn
+   id :- Long]
+  (d/transact conn [[:db.fn/retractEntity id]]))

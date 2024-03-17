@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/domain/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/domain/product.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/repository/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/repository/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/wire/in/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/wire/in/product.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

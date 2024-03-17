@@ -8,8 +8,16 @@
 
 (s/defn wire->domain :- wire.out.product/Product
   [{:keys [name slug price] :as wire} :- wire.in.product/Product]
-  (log/info (str "wire->domain" wire))
+  (log/info (str "update->domain" wire))
   {:name  name
+   :slug  slug
+   :price price})
+
+(s/defn wire-update->domain :- wire.out.product/Product
+  [{:keys [id name slug price] :as wire} :- wire.in.product/ProductUpdate]
+  (log/info (str "wire-update->domain" wire))
+  {:id    id
+   :name  name
    :slug  slug
    :price price})
 
@@ -21,8 +29,16 @@
    :slug  slug
    :price price})
 
+(s/defn update-domain->model :- models.product/Product
+  [{:keys [id name slug price] :as domain} :- domain.product/Product]
+  (log/info (str "domain->model" domain))
+  {:db/id         id
+   :product/name  name
+   :product/slug  slug
+   :product/price price})
+
 (s/defn domain->model :- models.product/Product
-  [{:keys [name slug price] :as domain} :- domain.product/Product]
+  [{:keys [name slug price] :as domain} :- domain.product/NewProduct]
   (log/info (str "domain->model" domain))
   {:product/name  name
    :product/slug  slug

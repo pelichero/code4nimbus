@@ -18,6 +18,16 @@
                 (adapters.product/domain->wire)
                 (json/write-str))})
 
+(s/defn ^:private update-product!
+  [conn
+   product :- wire.in.product/ProductUpdate]
+  {:status  201
+   :headers {"Content-Type" "text/html"}
+   :body    (-> (adapters.product/wire-update->domain product)
+                (controller.product/update! conn)
+                (adapters.product/domain->wire)
+                (json/write-str))})
+
 (s/defn ^:private get-all-products
   [conn]
   (let [products (controller.product/get-all conn)]
@@ -49,6 +59,14 @@
            :body    (-> (adapters.product/domain->wire product)
                         (json/write-str))})))
 
+(s/defn ^:private delete-product!
+  [conn
+   id]
+  (controller.product/delete! conn id)
+  {:status  204
+   :headers {"Content-Type" "text/html"}
+   :body    "Product deleted."})
+
 (def product-routes
   [(GET "/product/:id" []
      :path-params [id :- Long]
@@ -60,4 +78,11 @@
      (products-by-params (datomic.db/get-conn) name))
    (POST "/product" []
      :body [create-product-req wire.in.product/Product]
-     (add-product! (datomic.db/get-conn) create-product-req))])
+     (add-product! (datomic.db/get-conn) create-product-req))
+   (PUT "/product/:id" []
+     :path-params [id :- Long]
+     :body [update-product-req wire.in.product/Product]
+     (update-product! (datomic.db/get-conn) (assoc update-product-req :id id)))
+   (DELETE "/product/:id" []
+     :path-params [id :- Long]
+     (delete-product! (datomic.db/get-conn) id))])
