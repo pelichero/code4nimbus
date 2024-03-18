@@ -2,15 +2,21 @@
   (:require [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
             [com.code4nimbus.clojureapi.domain.product :as domain.product]
             [com.code4nimbus.clojureapi.repository.product :as repository.product]
+            [com.code4nimbus.clojureapi.diplomat.producer :as diplomat.producer]
             [clojure.tools.logging :as log]
             [schema.core :as s]))
 
 (s/defn add!
   [product :- domain.product/NewProduct
    conn]
-  (-> (adapters.product/domain->model product)
-      (repository.product/add! conn)
-      (adapters.product/model->domain)))
+  (let [product (-> (adapters.product/domain->model product)
+                    (repository.product/add! conn)
+                    (adapters.product/model->domain))]
+    (try
+      (diplomat.producer/send-product! product)
+      (catch Exception e
+        (log/error "Error sending message %s" (.getMessage e))))
+    product))
 
 (s/defn update! :- domain.product/NewProduct
   [product :- domain.product/Product

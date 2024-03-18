@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clojure-api/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/producer.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/project.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/resources/logback.properties" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/logback.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/kafka.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,12 +1,12 @@
-(ns com.code4nimbus.clojureapi.diplomat.kafka
+(ns com.code4nimbus.clojureapi.diplomat.consumer
   (:require [clojure.tools.logging :as log]
-            [environ.core :refer [env]])
-  (:import [org.apache.kafka.clients.admin AdminClientConfig NewTopic KafkaAdminClient]
+            [environ.core :refer [env]]
+            [com.code4nimbus.clojureapi.logic.misc :as logic.misc])
+  (:import (java.time Duration)
+           (org.apache.kafka.clients.admin AdminClientConfig KafkaAdminClient NewTopic)
            org.apache.kafka.clients.consumer.KafkaConsumer
-           [org.apache.kafka.clients.producer KafkaProducer ProducerRecord]
-           [org.apache.kafka.common.serialization StringDeserializer StringSerializer]
            (org.apache.kafka.common TopicPartition)
-           (java.time Duration)))
+           (org.apache.kafka.common.serialization StringDeserializer)))
 
 (defn create-topics!
   "Create the topic "
@@ -27,7 +27,6 @@
                   end-offsets))))
 
 (defn search-topic-by-key
-  "Searches through Kafka topic and returns those matching the key"
   [^KafkaConsumer consumer topic search-key]
   (let [topic-partitions (->> (.partitionsFor consumer topic)
                               (map #(TopicPartition. (.topic %) (.partition %))))
@@ -35,20 +34,18 @@
         _ (.seekToBeginning consumer (.assignment consumer))
         end-offsets (.endOffsets consumer (.assignment consumer))
         found-records (transient [])]
-    (log/infof "end offsets %s" end-offsets)
-    (log/infof "Pending messages? %s" (pending-messages end-offsets consumer))
+    (log/info "end offsets %s" end-offsets)
+    (log/info "Pending messages? %s" (pending-messages end-offsets consumer))
     (while (pending-messages end-offsets consumer)
-      (log/infof "Pending messages? %s" (pending-messages end-offsets consumer))
+      (log/info "Pending messages? %s" (pending-messages end-offsets consumer))
       (let [records (.poll consumer (Duration/ofMillis 50))
             matched-search-key (filter #(= (.key %) search-key) records)]
         (conj! found-records matched-search-key)
         (doseq [record matched-search-key]
-          (log/infof "Found Matching Key %s Value %s" (.key record) (.value record)))))
+          (log/info "Found Matching Key %s Value %s" (.key record) (.value record)))))
     (persistent! found-records)))
 
 (defn build-consumer
-  "Create the consumer instance to consume
-from the provided kafka topic name"
   [bootstrap-server]
   (let [consumer-props
         {"bootstrap.servers",  bootstrap-server
@@ -63,32 +60,17 @@ from the provided kafka topic name"
   [consumer topic]
   (.subscribe consumer [topic]))
 
-(defn build-producer ^KafkaProducer
-  ;"Create the kafka producer to send on messages received"
-  [bootstrap-server]
-  (let [producer-props {"value.serializer"  StringSerializer
-                        "key.serializer"    StringSerializer
-                        "bootstrap.servers" bootstrap-server}]
-    (KafkaProducer. producer-props)))
-
 (defn start-kafka-listeners
-  "Create the simple read and write topology with Kafka"
-  [bootstrap-server]
-  (let [consumer-topic "example-consumer-topic"
-        producer-topic "example-produced-topic"
-        bootstrap-server (env :bootstrap-server bootstrap-server)
+  []
+  (let [product-topic (logic.misc/product-topic)
+        bootstrap-server (env :bootstrap-server (logic.misc/bootstrap-server))
         replay-consumer (build-consumer bootstrap-server)
-        consumer (build-consumer bootstrap-server)
-        producer (build-producer bootstrap-server)]
-    (log/infof "Creating the topics %s" [producer-topic consumer-topic])
-    (create-topics! bootstrap-server [producer-topic consumer-topic] 1 1)
-    (log/infof "Starting the kafka example app. With topic consuming topic %s and producing to %s"
-               consumer-topic producer-topic)
-    (search-topic-by-key replay-consumer consumer-topic "1")
-    (consumer-subscribe consumer consumer-topic)
+        consumer (build-consumer bootstrap-server)]
+    (create-topics! bootstrap-server [product-topic] 1 1)
+    (search-topic-by-key replay-consumer product-topic "1")
+    (consumer-subscribe consumer product-topic)
     (while true
       (let [records (.poll consumer (Duration/ofMillis 100))]
         (doseq [record records]
-          (log/info "Sending on value" (str "Processed Value: " (.value record)))
-          (.send producer (ProducerRecord. producer-topic "a" (str "Processed Value: " (.value record))))))
+          (log/info (str "Processed Value: " (.value record)))))
       (.commitAsync consumer))))
