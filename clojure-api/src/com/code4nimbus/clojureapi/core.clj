@@ -33,4 +33,4 @@
   (configure-database)
   (run-server app {:port 9000})
   (configure-kafka)
-  (log/info "Server started on port 900"))
+  (log/info "Server started on port 9000"))
