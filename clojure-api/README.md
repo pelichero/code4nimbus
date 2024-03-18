@@ -4,10 +4,10 @@ A simple HTTP server in Clojure
 
 ## Usage
 
-  1. Clone repo `git clone https://github.com/divyum/clojure-simple-http`
-  2. `cd clojure-simple-http`
+  1. Clone repo `git clone https://github.com/pelichero/code4nimbus`
+  2. `cd clojure-api`
   3. `lein run`
-  4. Goto [localhost:8080](http://localhost:8080)
+  4. Goto [localhost:9000](http://localhost:9000)
 
 ## Building docker
 
