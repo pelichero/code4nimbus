@@ -1,11 +1,10 @@
 (ns com.code4nimbus.clojureapi.core
-  (:require [compojure.api.sweet :refer [api routes]]
-            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
+  (:require [clojure.tools.logging :as log]
+            [com.code4nimbus.clojureapi.datomic.db :as db]
             [com.code4nimbus.clojureapi.diplomat.consumer :as diplomat.consumer]
-            [com.code4nimbus.clojureapi.diplomat.producer :as diplomat.producer]
-            [org.httpkit.server :refer [run-server]]
-            [clojure.tools.logging :as log]
-            [com.code4nimbus.clojureapi.datomic.db :as db])
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
+            [compojure.api.sweet :refer [api routes]]
+            [org.httpkit.server :refer [run-server]])
   (:gen-class))
 
 (def swagger-config

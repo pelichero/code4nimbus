@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: com.cognitect/caster:1.0.45">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/cognitect/caster/1.0.45/caster-1.0.45.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
