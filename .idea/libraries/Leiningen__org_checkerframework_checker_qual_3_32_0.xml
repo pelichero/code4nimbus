@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: org.checkerframework/checker-qual:3.32.0">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

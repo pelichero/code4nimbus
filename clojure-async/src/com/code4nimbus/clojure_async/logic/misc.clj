@@ -1,4 +1,4 @@
-(ns com.code4nimbus.clojureapi.logic.misc
+(ns com.code4nimbus.clojure-async.logic.misc
   (:require [schema.core :as s]))
 
 (def env-bootstrap-server (str (System/getenv "BOOTSTRAP_SERVER")))
