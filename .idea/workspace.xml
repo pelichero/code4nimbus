@@ -5,92 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clojure-async/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/clojure-async.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/doc/intro.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/project.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/adapters/product.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/controller/product.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/core.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat/http_server.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat/producer.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/domain/product.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/logic/misc.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/wire/in/product.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/test/com/code4nimbus/clojure_async/core_test.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_anomalies_0_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_cognitect_caster_1_0_45.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_datomic_lucene_core_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_io_stats_1_0_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_java_io_0_1_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_memcache_asg_java_client_1_1_0_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_peer_1_0_7075.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_query_stats_1_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_datomic_query_support_0_8_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_github_ben_manes_caffeine_caffeine_3_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_google_errorprone_error_prone_annotations_2_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_h2database_h2_2_1_214.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_beanutils_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_io_2_15_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_equality_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_random_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__http_kit_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_buffer_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_codec_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_codec_http_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_codec_socks_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_common_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_handler_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_handler_proxy_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_resolver_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_classes_epoll_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_classes_kqueue_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_native_epoll_4_1_100_Final_linux_x86_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_native_kqueue_4_1_100_Final_osx_x86_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__io_netty_netty_transport_native_unix_common_4_1_100_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__javax_xml_bind_jaxb_api_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__medley_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_activemq_artemis_commons_2_31_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_activemq_artemis_core_client_2_31_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_httpcomponents_httpclient_4_5_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_jdbc_7_0_109.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_tomcat_tomcat_juli_7_0_109.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_checkerframework_checker_qual_3_32_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_async_1_6_681.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_cache_1_0_225.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_memoize_1_0_253.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_44.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_data_priority_map_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_176.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_jvm_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_cli_1_0_219.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_macro_0_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_reader_1_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_3_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_codehaus_janino_commons_compiler_jdk_3_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_fressian_fressian_0_6_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_jcl_over_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_log4j_over_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-async/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/project.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-async/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,10 +54,10 @@
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src": "clj",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src": "clj",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "metrics",
+    "git-widget-placeholder": "separate-projects",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/resources",
+    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.11428571",
@@ -148,11 +66,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clojure-async" />
       <recent name="$PROJECT_DIR$/clojure-async/resources" />
       <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/logic" />
       <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat" />
       <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/controller" />
-      <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/clojure-api/test" />
@@ -162,7 +80,7 @@
       <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1710847716559">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1710848297655">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for clojure-api">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />

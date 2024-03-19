@@ -16,9 +16,9 @@ services:
     environment:
       DB_URI: datomic:dev://datomic-transactor:4334/?password=unsafe
     ports:
-      - '8080:8080'
+      - '9090:8080'
 
-  server-app:
+  clojure-api:
     build: clojure-api
     links:
       - datomic-transactor
@@ -27,12 +27,23 @@ services:
       DATOMIC_URL: datomic:dev://datomic-transactor:4334/product/?password=unsafe
       BOOTSTRAP_SERVER: kafka1:9092
     ports:
-      - "8888:9000"
+      - "9000:9000"
+
+  clojure-async:
+    build: clojure-async
+    links:
+      - kafka1
+    environment:
+      BOOTSTRAP_SERVER: kafka1:9092
+    ports:
+      - "9001:9001"
 
   datomic-tools:
     build: datomic-database/docker/tools
     links:
       - datomic-transactor
+
+# CODE ABOVE NEED TO BE TESTED FIRST... TO CONNECT KAFKA I'M USING STANDALONE MODE (running the conduktor in my local machine)
 
   zoo1:
     image: confluentinc/cp-zookeeper:7.3.0

@@ -1,22 +1,16 @@
-# clojure-async
+# clojure-simple-http
 
-A Clojure library designed to ... well, that part is up to you.
+A simple HTTP server in Clojure
 
 ## Usage
 
-FIXME
+1. Clone repo `git clone https://github.com/pelichero/code4nimbus`
+2. `cd clojure-async`
+3. `lein run`
+4. Goto [http://localhost:9001/swagger](http://localhost:9001/swagger)
 
-## License
+## Building docker
 
-Copyright © 2024 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+1. Go to directory which contains `Dockerfile`
+2. run `docker build -t clojure-async .` to build the image
+3. run `docker run -it --rm -p 9001:9001 clojure-async` to run the container
