@@ -5,143 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/ClojureProjectResolveSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/blobs/version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__ch_qos_logback_logback_classic_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__ch_qos_logback_logback_core_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__cheshire_5_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__clj_time_0_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__clj_tuple_0_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__clout_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_cognitect_transit_clj_0_8_313.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_cognitect_transit_java_0_8_337.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_annotations_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_databind_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_csv_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_fasterxml_jackson_module_jackson_module_scala_2_12_2_13_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_ben_manes_caffeine_caffeine_2_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_fge_btf_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_fge_jackson_coreutils_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_fge_msg_simple_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_fge_uri_template_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_java_json_tools_json_schema_core_1_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_java_json_tools_json_schema_validator_2_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_github_luben_zstd_jni_1_5_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_google_errorprone_error_prone_annotations_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_google_guava_guava_16_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_googlecode_libphonenumber_libphonenumber_8_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_thoughtworks_paranamer_paranamer_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_typesafe_scala_logging_scala_logging_2_12_3_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__com_yammer_metrics_metrics_core_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_cli_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_digester_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_fileupload_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_io_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__commons_validator_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__compojure_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__crypto_equality_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__crypto_random_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__de_kotka_lazymap_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__environ_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__frankiesardo_linked_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__http_kit_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__ikitommi_linked_1_3_1_alpha1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__instaparse_1_4_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_dropwizard_metrics_metrics_core_4_1_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_buffer_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_codec_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_common_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_handler_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_resolver_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_transport_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_transport_classes_epoll_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_transport_native_epoll_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__io_netty_netty_transport_native_unix_common_4_1_94_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__javax_mail_mailapi_1_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__joda_time_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__medley_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_compojure_api_2_0_0_alpha26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_jsonista_0_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_muuntaja_0_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_ring_http_response_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_ring_swagger_0_26_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_ring_swagger_ui_2_2_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_schema_tools_0_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__metosin_scjsv_0_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__net_sf_jopt_simple_jopt_simple_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__net_sourceforge_argparse4j_argparse4j_0_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__nrepl_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_2_12_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_clients_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_group_coordinator_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_metadata_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_raft_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_server_common_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_storage_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_storage_api_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_kafka_kafka_tools_api_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_yetus_audience_annotations_0_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_zookeeper_zookeeper_3_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_apache_zookeeper_zookeeper_jute_3_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_bitbucket_b_c_jose4j_0_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_checkerframework_checker_qual_3_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_clojure_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_44.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_data_json_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_176.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_tools_logging_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_tools_macro_0_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_clojure_tools_namespace_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_lz4_lz4_java_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_mozilla_rhino_1_7R4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_msgpack_msgpack_0_6_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_nrepl_incomplete_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_ow2_asm_asm_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_pcollections_pcollections_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_scala_lang_modules_scala_collection_compat_2_12_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_scala_lang_modules_scala_java8_compat_2_12_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_scala_lang_scala_library_2_12_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_scala_lang_scala_reflect_2_12_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_tobereplaced_lettercase_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__org_xerial_snappy_snappy_java_1_1_10_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__potemkin_0_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__prismatic_plumbing_0_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__prismatic_schema_1_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__riddley_0_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__ring_ring_codec_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__ring_ring_core_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__tigris_0_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/libraries/Leiningen__virgil_0_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clojure-async/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-async/clojure-async.iml" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/clojure-async.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat/producer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat/producer.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/producer.clj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +50,7 @@
     "Clojure REPL.REPL for clojure-api.executor": "Run",
     "Clojure REPL.REPL for clojure-async.executor": "Run",
     "Clojure REPL.REPL for clojure-simple-http.executor": "Run",
+    "Docker.docker-compose.yml.clojure-api: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.clojure-async: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.conduktor-platform: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.datomic-transactor: Compose Deployment.executor": "Run",
@@ -193,7 +67,7 @@
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src": "clj",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src": "clj",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "fix/kafka-containres",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus",
@@ -220,7 +94,7 @@
     </key>
   </component>
   <component name="ReplState" timestamp="1710849148871">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.clojure-async: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.clojure-api: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -303,12 +177,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.clojure-async: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.clojure-api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="clojure-async" />
+              <option value="clojure-api" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -316,12 +190,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.conduktor-platform: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.clojure-async: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="conduktor-platform" />
+              <option value="clojure-async" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -356,19 +230,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.conduktor-platform: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.conduktor-platform: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

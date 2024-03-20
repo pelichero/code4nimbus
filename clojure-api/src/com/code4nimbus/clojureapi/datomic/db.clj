@@ -29,3 +29,9 @@
     (log/info "Schema created")
     (catch Exception error
       (log/error "Error creating schema, ex: " error))))
+
+(defn configure
+  []
+  (drop-database)
+  (create-database)
+  (create-schema))
