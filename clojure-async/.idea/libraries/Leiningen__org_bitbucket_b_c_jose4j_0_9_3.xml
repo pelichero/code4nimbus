@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.bitbucket.b_c/jose4j:0.9.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bitbucket/b_c/jose4j/0.9.3/jose4j-0.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

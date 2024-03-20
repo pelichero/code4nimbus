@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.pcollections/pcollections:4.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pcollections/pcollections/4.0.1/pcollections-4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

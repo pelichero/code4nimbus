@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: metosin/scjsv:0.4.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/metosin/scjsv/0.4.1/scjsv-0.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

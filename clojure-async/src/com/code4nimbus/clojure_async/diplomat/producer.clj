@@ -23,5 +23,6 @@
         record (ProducerRecord. product-topic json-product)]
     (try
       (.send producer record)
+      (log/info (str "Message sent: " (json/write-str product)))
       (catch Exception e
         (log/error "Error sending message %s" (.getMessage e))))))

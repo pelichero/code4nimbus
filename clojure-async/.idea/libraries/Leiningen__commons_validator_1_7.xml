@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: commons-validator:1.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-validator/commons-validator/1.7/commons-validator-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
