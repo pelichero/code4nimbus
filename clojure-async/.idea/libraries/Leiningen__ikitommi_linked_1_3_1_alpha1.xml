@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: ikitommi/linked:1.3.1-alpha1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ikitommi/linked/1.3.1-alpha1/linked-1.3.1-alpha1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

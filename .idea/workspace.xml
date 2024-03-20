@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clojure-async/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-async/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/producer.clj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +50,16 @@
     "Clojure REPL.REPL for clojure-api.executor": "Run",
     "Clojure REPL.REPL for clojure-async.executor": "Run",
     "Clojure REPL.REPL for clojure-simple-http.executor": "Run",
+    "Docker.docker-compose.yml.clojure-api: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.clojure-async: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.conduktor-platform: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.datomic-transactor: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka-schema-registry: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka1: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.server-app: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.zoo1: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -54,10 +67,10 @@
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src": "clj",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src": "clj",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "separate-projects",
+    "git-widget-placeholder": "fix/kafka-containres",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async",
+    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.11428571",
@@ -66,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/clojure-async" />
       <recent name="$PROJECT_DIR$/clojure-async/resources" />
       <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/logic" />
       <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/diplomat" />
-      <recent name="$PROJECT_DIR$/clojure-async/src/com/code4nimbus/clojure_async/controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/clojure-api/test" />
@@ -80,8 +93,8 @@
       <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/controller" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1710848297655">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Clojure REPL.REPL for clojure-api">
+  <component name="ReplState" timestamp="1710849148871">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.clojure-api: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -92,53 +105,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="REPL for clojure-api" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
-      <option name="configVersion" value="1" />
-      <option name="displayName" value="REPL for clojure-api" />
-      <envs>
-        <env name="BOOTSTRAP_SERVER" value="localhost:9092" />
-        <env name="DATOMIC_URL" value="datomic:dev://localhost:4334/product" />
-      </envs>
-      <option name="execution" value="LEININGEN" />
-      <module name="clojure-api" />
-      <option name="options" />
-      <option name="profiles" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clojure-api" />
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <method v="2" />
-    </configuration>
-    <configuration name="REPL for clojure-async" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
-      <option name="configVersion" value="1" />
-      <option name="displayName" value="REPL for clojure-async" />
-      <envs>
-        <env name="BOOTSTRAP_SERVER" value="localhost:9092" />
-      </envs>
-      <option name="execution" value="LEININGEN" />
-      <module name="clojure-async" />
-      <option name="options" />
-      <option name="profiles" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clojure-async" />
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <option name="configVersion" value="1" />
@@ -211,12 +177,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.datomic-transactor: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.clojure-api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="datomic-transactor" />
+              <option value="clojure-api" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -224,12 +190,38 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.server-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.clojure-async: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="server-app" />
+              <option value="clojure-async" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.kafka-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka-ui" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -238,19 +230,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Clojure REPL.REPL for clojure-api" />
-      <item itemvalue="Clojure REPL.REPL for clojure-async" />
+      <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.datomic-transactor: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.server-app: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Clojure REPL.REPL for clojure-api" />
-        <item itemvalue="Clojure REPL.REPL for clojure-async" />
-        <item itemvalue="Docker.docker-compose.yml.server-app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.datomic-transactor: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.typesafe.scala-logging/scala-logging_2.12:3.9.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/scala-logging/scala-logging_2.12/3.9.4/scala-logging_2.12-3.9.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

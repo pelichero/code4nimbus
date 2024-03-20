@@ -1,6 +1,6 @@
 (ns com.code4nimbus.clojureapi.core
   (:require [clojure.tools.logging :as log]
-            [com.code4nimbus.clojureapi.datomic.db :as db]
+            [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
             [com.code4nimbus.clojureapi.diplomat.consumer :as diplomat.consumer]
             [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
             [compojure.api.sweet :refer [api routes]]
@@ -16,14 +16,12 @@
 (defn ^:private configure-database
   []
   (log/info "Configuring database...")
-  (db/drop-database)
-  (db/create-database)
-  (db/create-schema))
+  (datomic.db/configure))
 
 (defn ^:private configure-kafka
   []
   (log/info "Starting Kafka listeners...")
-  (diplomat.consumer/start-kafka-listeners))
+  (diplomat.consumer/product-listener))
 
 (def app (api {:swagger swagger-config} (apply routes product-routes)))
 

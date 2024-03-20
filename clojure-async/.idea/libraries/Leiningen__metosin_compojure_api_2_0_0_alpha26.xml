@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: metosin/compojure-api:2.0.0-alpha26">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/metosin/compojure-api/2.0.0-alpha26/compojure-api-2.0.0-alpha26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
