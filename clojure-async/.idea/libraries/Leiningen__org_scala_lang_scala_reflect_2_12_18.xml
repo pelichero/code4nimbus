@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.scala-lang/scala-reflect:2.12.18">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-reflect/2.12.18/scala-reflect-2.12.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

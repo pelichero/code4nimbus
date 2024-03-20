@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.scala-lang.modules/scala-java8-compat_2.12:1.0.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/modules/scala-java8-compat_2.12/1.0.2/scala-java8-compat_2.12-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

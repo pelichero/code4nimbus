@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.apache.yetus/audience-annotations:0.12.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

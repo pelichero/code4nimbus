@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: net.sourceforge.argparse4j/argparse4j:0.7.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/argparse4j/argparse4j/0.7.0/argparse4j-0.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
