@@ -34,4 +34,5 @@
   []
   (drop-database)
   (create-database)
-  (create-schema))
+  (create-schema)
+  (get-conn))

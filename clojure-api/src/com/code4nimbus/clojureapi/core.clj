@@ -19,15 +19,15 @@
   (datomic.db/configure))
 
 (defn ^:private configure-kafka
-  []
+  [conn]
   (log/info "Starting Kafka listeners...")
-  (diplomat.consumer/product-listener))
+  (diplomat.consumer/product-listener conn))
 
 (def app (api {:swagger swagger-config} (apply routes product-routes)))
 
 ; starting point of server.
 (defn -main [& args]
-  (configure-database)
-  (run-server app {:port 9000})
-  (configure-kafka)
-  (log/info "Server started on port 9000"))
+  (let [conn (configure-database)]
+    (run-server app {:port 9000})
+    (configure-kafka conn)
+    (log/info "Server started on port 9000")))

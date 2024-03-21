@@ -6,9 +6,9 @@
             [clojure.tools.logging :as log]
             [schema.core :as s]))
 
-(s/defn wire->domain :- wire.out.product/Product
+(s/defn wire->domain :- domain.product/Product
   [{:keys [name slug price] :as wire} :- wire.in.product/Product]
-  (log/info (str "update->domain" wire))
+  (log/info (str "wire->domain" wire))
   {:name  name
    :slug  slug
    :price price})
@@ -31,7 +31,7 @@
 
 (s/defn update-domain->model :- models.product/Product
   [{:keys [id name slug price] :as domain} :- domain.product/Product]
-  (log/info (str "domain->model" domain))
+  (log/info (str "update-domain->model" domain))
   {:db/id         id
    :product/name  name
    :product/slug  slug
@@ -46,7 +46,7 @@
 
 (s/defn model->domain :- domain.product/Product
   [{:product/keys [name slug price] :as model} :- models.product/Product]
-  (log/info (str ".model->domain" model))
+  (log/info (str "model->domain" model))
   {:id    (:db/id model)
    :name  name
    :slug  slug
