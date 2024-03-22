@@ -2,9 +2,11 @@
   (:require [clojure.tools.logging :as log]
             [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
             [com.code4nimbus.clojureapi.diplomat.consumer :as diplomat.consumer]
-            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes registry]]
             [compojure.api.sweet :refer [api routes]]
-            [org.httpkit.server :refer [run-server]])
+            [iapetos.collector.ring :as ring]
+            [org.httpkit.server :refer [run-server]]
+            [ring.middleware.defaults :refer [api-defaults wrap-defaults]])
   (:gen-class))
 
 (def swagger-config
@@ -23,10 +25,18 @@
   (log/info "Starting Kafka listeners...")
   (diplomat.consumer/product-listener conn))
 
-(def app (api {:swagger swagger-config} (apply routes product-routes)))
+(defn ^:private wrap-metrics [app]
+  (ring/wrap-metrics app
+                     registry
+                     {:path    "/metrics"
+                      :path-fn #(re-find #"^/[^/]+" (:uri %))}))
 
-; starting point of server.
-(defn -main [& args]
+(def app
+  (-> (api {:swagger swagger-config} (apply routes product-routes))
+      (wrap-defaults api-defaults)
+      wrap-metrics))
+
+(defn -main [& _]
   (let [conn (configure-database)]
     (run-server app {:port 9000})
     (configure-kafka conn)

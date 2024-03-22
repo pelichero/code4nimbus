@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grafana/data/grafana.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/0/3/034ebd2f1ffe29da" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/2/8/287863b583a3f0f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/4/b/4bcb92c03be2e0f6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/b/d/bd919441646f427a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/environment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus/config/prometheus.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/adapters/product.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/project.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/datomic/db.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-async/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-async/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +58,7 @@
     &quot;Docker.docker-compose.yml.clojure-async: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.conduktor-platform: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.datomic-transactor: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.grafana: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.kafka-schema-registry: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.kafka1: Compose Deployment.executor&quot;: &quot;Run&quot;,
@@ -65,7 +72,7 @@
     &quot;cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src&quot;: &quot;clj&quot;,
     &quot;cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src&quot;: &quot;clj&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fix/kafka-containres&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add-grafana-module&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus&quot;,
@@ -201,6 +208,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.grafana: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="grafana" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.kafka-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -214,33 +234,20 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="kafka" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.grafana: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.grafana: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.clojure-async: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
