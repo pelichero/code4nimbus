@@ -36,8 +36,10 @@
       (wrap-defaults api-defaults)
       wrap-metrics))
 
+(defonce server (atom nil))
+
 (defn -main [& _]
   (let [conn (configure-database)]
-    (run-server app {:port 9000})
+    (reset! server (run-server app {:port 9000}))
     (configure-kafka conn)
     (log/info "Server started on port 9000")))

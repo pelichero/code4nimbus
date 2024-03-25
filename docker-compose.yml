@@ -21,6 +21,7 @@ services:
   clojure-api:
     build: clojure-api
     links:
+      - prometheus
       - datomic-transactor
       - kafka
     environment:
