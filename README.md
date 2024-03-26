@@ -16,16 +16,23 @@ The repository is organized into the following sections:
 - `clojure-api`: Contains Web API projects built with Clojure.
 - `clojure-async`: Includes asynchronous Clojure applications that interact with Kafka.
 - `datomic-datbase`: Includes a sample Datomic database and tools to interact with it.
+  - `datomic-console`: Contains Datomic Console configuration files.
+- `kafka`: Contains Kafka configuration files and scripts.
+  - `zookeeper`: Contains Zookeeper configuration files.
+  - `kafka-ui`: Includes a Kafka UI tool to visualize topics and messages.
+- `prometheus`: Contains Prometheus configuration files.
+- `grafana`: Contains Grafana configuration files.`
 
 # How to put thing up!.
 
-TL;DR To run the entire project, execute the following command:
+`TL;DR` To run the entire project, execute the following command:
 
 ```sh
 docker compose up
 ```
 
-Urls:
+This command will start the following services:
+
    - Grafana: http://localhost:3000
    - Prometheus: http://localhost:9090
    - Datomic Console: http://localhost:9090/browse
@@ -195,3 +202,17 @@ Icons made by [Iconfinder](https://www.iconfinder.com/) and [Freepik](https://ww
 ## References
 
 https://github.com/demystifyfp/BlogSamples/blob/0.10/clojure/resultful-crud/src/resultful_crud/core.clj
+
+## Extra
+
+I'm using portainer to manage the containers, you can access it through the following link:
+
+https://docs.portainer.io/start/install/server/setup
+
+You should be able to manage your docker containers through a web interface like this:
+
+![img_4.png](img_4.png)
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

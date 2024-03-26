@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/3/e/3e724fbc0a74c052" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/8/e/8ef6a103ba744e08" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/data/sessions/d/4/d4a421a83e0ee84a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana/data/sessions/d/8/d8a38a1702ab76fc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
