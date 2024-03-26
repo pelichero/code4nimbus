@@ -14,17 +14,62 @@ Welcome to my monorepo project dedicated to exploring Clojure and Datomic while 
 The repository is organized into the following sections:
 
 - `clojure-api`: Contains Web API projects built with Clojure.
+- `clojure-async`: Includes asynchronous Clojure applications that interact with Kafka.
 - `datomic-datbase`: Includes a sample Datomic database and tools to interact with it.
 
 # How to put thing up!.
 
+TL;DR To run the entire project, execute the following command:
 
+```sh
+docker compose up
+```
+
+Urls:
+   - Grafana: http://localhost:3000
+   - Prometheus: http://localhost:9090
+   - Datomic Console: http://localhost:9090/browse
+   - Kafka Topics UI: http://localhost:9099
+   - Clojure API: http://localhost:9000/swagger
+   - Clojure Async: http://localhost:9001/swagger
+
+# Full explanation: 
+
+- [Grafana](#grafana)
+- [Prometheus](#prometheus)
 - [Datomic - Storage Services and Transactor](#storage-services-and-transactor)
     - [Dev Mode](#dev-mode)
     - [Datomic Console](#datomic-console)
+- [Kafka](#kafka)
 - [Clojure API](#clojure-api) 
 - [Clojure Async](#clojure-async)
    
+## Grafana
+
+Official Documentation: [Grafana](https://grafana.com/docs/grafana/latest/getting-started/getting-started-docker/)
+
+Run Grafana:
+
+```sh
+docker compose up grafana
+```
+
+http://localhost:3000
+
+![img.png](img.png)
+
+## Prometheus
+
+Official Documentation: [Prometheus](https://prometheus.io/docs/prometheus/latest/installation/)
+
+Run Prometheus:
+
+```sh
+docker compose up prometheus
+```
+
+http://localhost:9090
+
 ## Datomic - Storage Services and Transactor
 
 Official Documentation: [Storage Services](https://docs.datomic.com/pro/overview/storage.html)
@@ -57,6 +102,30 @@ http://localhost:9090/browse
 
 ![Screenshot of the Datomic Console interface](https://docs.datomic.com/pro/images/console-window.png "Screenshot of the Datomic Console interface")
 
+## Kafka
+
+Official Documentation: [Kafka Quickstart](https://kafka.apache.org/quickstart)
+
+Run Kafka:
+
+```sh
+docker compose up kafka
+```
+
+### Kafka Topics UI
+
+Run Kafka UI:
+
+```sh
+docker compose up kafka-ui
+```
+
+To access the Kafka Topics UI:
+
+http://localhost:9099
+
+![img_1.png](img_1.png)
+
 ## Clojure API
 
 To run the Web application:
@@ -68,6 +137,8 @@ docker compose up clojure-api
 You can access the swagger UI through the following link:
 
 http://localhost:9000/swagger
+
+![img_2.png](img_2.png)
 
 ## Clojure Async
 
@@ -81,6 +152,7 @@ You can access the swagger UI through the following link:
 
 http://localhost:9001/swagger
 
+![img_3.png](img_3.png)
 
 ## Study Path
 
