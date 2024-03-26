@@ -11,7 +11,7 @@
             [schema.core :as s]))
 (import java.util.Date)
 
-(defonce registry
+(defonce prometheus-registry
          (-> (prometheus/collector-registry)
              jvm/initialize
              ring/initialize
@@ -21,7 +21,8 @@
                (prometheus/summary :code4nimbus-clojureapi/products-by-params-seconds)
                (prometheus/summary :code4nimbus-clojureapi/add-product-seconds)
                (prometheus/summary :code4nimbus-clojureapi/update-product-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/delete-product-seconds))))
+               (prometheus/summary :code4nimbus-clojureapi/delete-product-seconds)
+               (prometheus/summary :code4nimbus-clojureapi/generate-random-products-seconds))))
 
 (s/defn ^:private add-product!
   [conn
@@ -82,34 +83,48 @@
    :headers {"Content-Type" "text/html"}
    :body    "Product deleted."})
 
+(s/defn ^:private generate-random-products!
+  [conn
+   num]
+  (let [products (controller.product/generate-random-products conn num)]
+    {:status  201
+     :headers {"Content-Type" "text/html"}
+     :body    (-> (map adapters.product/domain->wire products)
+                  (json/write-str))}))
+
 (def product-routes
   [(GET "/product/:id" []
      :path-params [id :- Long]
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/product-by-id-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/product-by-id-seconds)
        (product-by-id (datomic.db/get-conn) id)))
    (GET "/products" []
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/get-all-products-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/get-all-products-seconds)
        (get-all-products (datomic.db/get-conn))))
    (GET "/products-by-params" []
      :query-params [name :- (describe String "Products name.")]
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/products-by-params-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/products-by-params-seconds)
        (products-by-params (datomic.db/get-conn) name)))
    (POST "/product" []
      :body [create-product-req wire.in.product/Product]
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/add-product-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/add-product-seconds)
        (add-product! (datomic.db/get-conn) create-product-req)))
    (PUT "/product/:id" []
      :path-params [id :- Long]
      :body [update-product-req wire.in.product/Product]
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/update-product-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/update-product-seconds)
        (update-product! (datomic.db/get-conn) (assoc update-product-req :id id))))
+   (PUT "/generate-random/:num" []
+     :path-params [num :- Long]
+     (prometheus/with-duration
+       (prometheus-registry :code4nimbus-clojureapi/generate-random-products-seconds)
+       (generate-random-products! (datomic.db/get-conn) num)))
    (DELETE "/product/:id" []
      :path-params [id :- Long]
      (prometheus/with-duration
-       (registry :code4nimbus-clojureapi/delete-product-seconds)
+       (prometheus-registry :code4nimbus-clojureapi/delete-product-seconds)
        (delete-product! (datomic.db/get-conn) id)))])

@@ -3,9 +3,10 @@
             [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
             [com.code4nimbus.clojureapi.domain.product :as domain.product]
             [com.code4nimbus.clojureapi.repository.product :as repository.product]
+            [com.code4nimbus.clojureapi.logic.product :as logic.product]
             [schema.core :as s]))
 
-(s/defn add!
+(s/defn add! :- domain.product/Product
   [product :- domain.product/NewProduct
    conn]
   (-> (adapters.product/domain->model product)
@@ -50,3 +51,15 @@
   [conn
    id :- s/Int]
   (repository.product/delete! conn id))
+
+(s/defn generate-random-products :- [domain.product/Product]
+  "Generate n random products and add them to the database."
+  [conn
+   n :- s/Int]
+  (reduce (fn [acc _]
+            (conj acc (-> (logic.product/->random-product)
+                          (adapters.product/domain->model)
+                          (repository.product/add! conn)
+                          (adapters.product/model->domain))))
+          []
+          (range n)))

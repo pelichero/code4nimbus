@@ -2,7 +2,7 @@
   (:require [clojure.tools.logging :as log]
             [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
             [com.code4nimbus.clojureapi.diplomat.consumer :as diplomat.consumer]
-            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes registry]]
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes prometheus-registry]]
             [compojure.api.sweet :refer [api routes]]
             [iapetos.collector.ring :as ring]
             [org.httpkit.server :refer [run-server]]
@@ -27,7 +27,7 @@
 
 (defn ^:private wrap-metrics [app]
   (ring/wrap-metrics app
-                     registry
+                     prometheus-registry
                      {:path    "/metrics"
                       :path-fn #(re-find #"^/[^/]+" (:uri %))}))
 
