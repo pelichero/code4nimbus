@@ -17,6 +17,7 @@
                  [javax.xml.bind/jaxb-api "2.3.0"]
                  [com.datomic/peer "1.0.7075"]
                  [io.prometheus/simpleclient_hotspot "0.1.0"]
+                 [eigenhombre/namejen "0.1.23"]
                  [iapetos "0.1.7"]]
   :profiles {:uberjar {:aot [com.code4nimbus.clojureapi.core]}}
   :resource-paths ["resources"]

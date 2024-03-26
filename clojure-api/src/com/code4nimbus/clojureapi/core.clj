@@ -2,7 +2,8 @@
   (:require [clojure.tools.logging :as log]
             [com.code4nimbus.clojureapi.datomic.db :as datomic.db]
             [com.code4nimbus.clojureapi.diplomat.consumer :as diplomat.consumer]
-            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes registry]]
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes prometheus-registry]]
+            [com.code4nimbus.clojureapi.controller.product :as controller.product]
             [compojure.api.sweet :refer [api routes]]
             [iapetos.collector.ring :as ring]
             [org.httpkit.server :refer [run-server]]
@@ -27,9 +28,14 @@
 
 (defn ^:private wrap-metrics [app]
   (ring/wrap-metrics app
-                     registry
+                     prometheus-registry
                      {:path    "/metrics"
                       :path-fn #(re-find #"^/[^/]+" (:uri %))}))
+
+(defn ^:private populate-database
+  [conn]
+  (log/info "Populating database...")
+  (controller.product/generate-random-products conn 10))
 
 (def app
   (-> (api {:swagger swagger-config} (apply routes product-routes))
@@ -41,5 +47,6 @@
 (defn -main [& _]
   (let [conn (configure-database)]
     (reset! server (run-server app {:port 9000}))
-    (configure-kafka conn)
-    (log/info "Server started on port 9000")))
+    (populate-database conn)
+    (log/info "Server started on port 9000")
+    (configure-kafka conn)))

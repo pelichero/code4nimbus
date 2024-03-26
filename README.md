@@ -63,7 +63,7 @@ docker compose up grafana
 
 http://localhost:3000
 
-![img.png](img.png)
+![img.png](resources/images/img.png)
 
 ## Prometheus
 
@@ -131,7 +131,7 @@ To access the Kafka Topics UI:
 
 http://localhost:9099
 
-![img_1.png](img_1.png)
+![img_1.png](resources/images/img_1.png)
 
 ## Clojure API
 
@@ -145,7 +145,7 @@ You can access the swagger UI through the following link:
 
 http://localhost:9000/swagger
 
-![img_2.png](img_2.png)
+![img_2.png](resources/images/img_2.png)
 
 ## Clojure Async
 
@@ -159,7 +159,7 @@ You can access the swagger UI through the following link:
 
 http://localhost:9001/swagger
 
-![img_3.png](img_3.png)
+![img_3.png](resources/images/img_3.png)
 
 ## Study Path
 
@@ -211,7 +211,7 @@ https://docs.portainer.io/start/install/server/setup
 
 You should be able to manage your docker containers through a web interface like this:
 
-![img_4.png](img_4.png)
+![img_4.png](resources/images/img_4.png)
 
 ### License
 
