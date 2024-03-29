@@ -5,6 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[environ "1.1.0"]
                  [org.clojure/clojure "1.10.0"]
+                 [org.clojure/test.check "0.9.0"]
+                 [prismatic/schema-generators "0.1.5"]
                  [org.clojure/data.json "2.5.0"]
                  [org.clojure/tools.logging "1.1.0"]
                  [ch.qos.logback/logback-classic "1.2.6"]
