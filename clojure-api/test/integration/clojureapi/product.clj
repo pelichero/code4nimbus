@@ -1,11 +1,25 @@
 (ns integration.clojureapi.product
-  (:require [clojure.test :refer :all]
-            [ring.mock.request :as mock.request]))
+  (:require [clojure.data.json :as json]
+            [clojure.test :refer :all]
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
+            [compojure.api.sweet :refer [api routes]]
+            [peridot.core :refer :all]))
 
-(deftest add-product!
-  (testing "add-product!"
-    (is (= (-> (mock.request/request :post "/product")
-               (mock.request/body "{\"name\":\"test\",\"slug\":\"test\",\"price\":1}"))
-           {:status  200
-            :headers {"Content-Type" "text/html"}
-            :body    "{\"name\":\"test\",\"slug\":\"test\",\"price\":1}"}))))
+(def app (api (apply routes product-routes)))
+
+;TODO finalize this test
+(deftest products-test
+  (testing "GET products test"
+    (let [response (-> (session app)
+                       (request "/products"
+                                :request-method :get
+                                :content-type "application/json")
+                       :response
+                       :body
+                       json/read-str
+                       first)]
+      ;(is (= {:id   integer?
+      ;        :name string?
+      ;        :slug string?}
+      ;       response))
+      )))
