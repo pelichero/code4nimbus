@@ -40,3 +40,16 @@
                :content-type "application/json")
       :response
       :body))
+
+(defn update-product
+  [id
+   product]
+  (-> (session app)
+      (request (str "/product/" id)
+               :request-method :put
+               :content-type "application/json"
+               :body (json/write-str product))
+      :response
+      :body
+      json/read-str
+      keywordize-keys))
