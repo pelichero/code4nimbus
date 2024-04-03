@@ -34,3 +34,16 @@
           id (:id response)
           delete-response (aux.product/delete-product id)]
       (is (= delete-response "Product deleted.")))))
+
+(deftest update-product-test
+  (testing "PUT product test"
+    (let [product {:name  "test"
+                   :slug  "test"
+                   :price 1000}
+          response (aux.product/add-product product)
+          update-response (aux.product/update-product (:id response) product)]
+      (is (match? update-response
+                  {:id    integer?
+                   :name  string?
+                   :slug  string?
+                   :price integer?})))))
