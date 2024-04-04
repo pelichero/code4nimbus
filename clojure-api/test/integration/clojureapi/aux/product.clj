@@ -20,6 +20,17 @@
       first
       keywordize-keys))
 
+(defn get-product-by-id
+  [id]
+  (-> (session app)
+      (request (str "/product/" id)
+               :request-method :get
+               :content-type "application/json")
+      :response
+      :body
+      json/read-str
+      keywordize-keys))
+
 (defn add-product
   [product]
   (-> (session app)
