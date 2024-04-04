@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Navigate to project directory
-      run: cd clojure-api
     - name: Install dependencies
+      working-directory: clojure-api
       run: lein deps
     - name: Run tests
+      working-directory: clojure-api
       run: lein test
