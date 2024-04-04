@@ -1,4 +1,4 @@
-(ns com.code4nimbus.clojureapi.adapters.product-test
+(ns unit.clojureapi.adapters.product-test
   (:require [clojure.test :refer :all]
             [schema-generators.generators :as gen]
             [com.code4nimbus.clojureapi.adapters.product :as adapters.product]

@@ -1,4 +1,4 @@
-(ns com.code4nimbus.clojureapi.logic.product-test
+(ns unit.clojureapi.logic.product-test
   (:require [clojure.test :refer :all])
   (:require [com.code4nimbus.clojureapi.logic.product :refer [->random-product]]))
 
