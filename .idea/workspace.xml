@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/blobs/version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/aux/kafka/product.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/product_consumer_test.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/product.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/product_test.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pelichero&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pelichero/code4nimbus.git&quot;,
+    &quot;accountId&quot;: &quot;c934f430-f779-4644-836b-6b2a3fcdd36e&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -117,6 +129,7 @@
       <setting name="customPortFile" value="" />
       <setting name="fixLineNumbers" value="false" />
       <setting name="focusEditor" value="false" />
+      <setting name="urlFile" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="aws.lambda" factoryName="Local">
@@ -240,14 +253,6 @@
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-8336523bb0d9-641c9356" />
-        <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

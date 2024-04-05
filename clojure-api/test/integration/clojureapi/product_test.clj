@@ -1,4 +1,4 @@
-(ns integration.clojureapi.product
+(ns integration.clojureapi.product_test
   (:require [clojure.test :refer :all]
             [integration.clojureapi.aux.matcher :refer [match?]]
             [integration.clojureapi.aux.product :as aux.product]
