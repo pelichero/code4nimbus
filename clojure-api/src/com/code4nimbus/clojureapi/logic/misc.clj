@@ -1,8 +1,9 @@
 (ns com.code4nimbus.clojureapi.logic.misc
   (:require [schema.core :as s]))
 
-;TODO: This should be a config file
-(def env-bootstrap-server (str (System/getenv "BOOTSTRAP_SERVER")))
+(def env-bootstrap-server (if (nil? (System/getenv "BOOTSTRAP_SERVER"))
+                            "localhost:9092"
+                            (str (System/getenv "BOOTSTRAP_SERVER"))))
 
 (s/defn bootstrap-server :- s/Str
   []
