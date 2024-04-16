@@ -51,6 +51,18 @@ This command will start the following services:
 - [Clojure API](#clojure-api) 
 - [Clojure Async](#clojure-async)
    
+## Some useful commands
+
+- Pre requisites:
+  - Install [jq](https://stedolan.github.io/jq/download/) to generate JSON payloads.
+  - Install [Vegeta](https://github.com/tsenart/vegeta) to generate load tests.
+
+- To produce some messages in Kafka:
+
+```sh
+vegeta attack -targets=tmp -rate=1 -duration=5s | tee results.bin | vegeta report
+```
+
 ## Grafana
 
 Official Documentation: [Grafana](https://grafana.com/docs/grafana/latest/getting-started/getting-started-docker/)
