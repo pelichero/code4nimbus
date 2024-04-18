@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exporter/exporter-brokers.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/load_test/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grafana/data/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/data/grafana.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/product.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus/config/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus/config/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/tmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

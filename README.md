@@ -214,6 +214,7 @@ Icons made by [Iconfinder](https://www.iconfinder.com/) and [Freepik](https://ww
 ## References
 
 https://github.com/demystifyfp/BlogSamples/blob/0.10/clojure/resultful-crud/src/resultful_crud/core.clj
+https://gsfl3101.medium.com/kafka-kraft-monitoring-with-prometheus-and-grafana-1994ef272f48
 
 ## Extra
 
