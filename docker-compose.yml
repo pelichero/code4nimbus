@@ -49,20 +49,37 @@ services:
     links:
       - datomic-transactor
 
+#  jmx-kafka:
+#    image: "sscaling/jmx-prometheus-exporter"
+#    ports:
+#      - "5556:5556"
+#    environment:
+#      CONFIG_YML: "/etc/jmx_exporter/config.yml"
+#    volumes:
+#      - ./etc/jmx_exporter/config_kafka.yml:/etc/jmx_exporter/config.yml
+#    container_name: jmx-kafka
+#    depends_on:
+#      - kafka
+
   kafka:
-    image: bitnami/kafka:latest
-    restart: on-failure
-    ports:
-      - 9092:9092
-    environment:
-      - KAFKA_CFG_BROKER_ID=1
-      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
-      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
-      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
-      - KAFKA_CFG_NUM_PARTITIONS=3
-      - ALLOW_PLAINTEXT_LISTENER=yes
+    image: confluentinc/cp-kafka:7.5.0
     depends_on:
       - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_JMX_PORT: 9991
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://:9092
+      KAFKA_LOG4J_LOGGERS: "kafka.authorizer.logger=DEBUG"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: kafka:29092
+      CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
+      CONFLUENT_METRICS_ENABLE: 'true'
 
   zookeeper:
     image: bitnami/zookeeper:latest
@@ -93,12 +110,36 @@ services:
       - 9090:9090
 
   grafana:
-    image: grafana/grafana:5.1.5
+    image: grafana/grafana:9.5.12
     ports:
       - 3000:3000
     volumes:
       - ./grafana/data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
     env_file:
       - ./grafana/environment
+    environment:
+      GF_PATHS_DATA: /var/lib/grafana
+      GF_SECURITY_ADMIN_PASSWORD: admin
     depends_on:
       - prometheus
+
+  kafka-exporter:
+    container_name: kafka-exporter
+    image: bitnami/kafka-exporter:1.7.0
+    command:
+      - "--kafka.server=kafka:9092"
+    ports:
+      - 9308:9308
+
+  jmx-exporter-broker:
+    container_name: jmx-exporter-broker
+    image: bitnami/jmx-exporter:0.20.0
+    volumes:
+      - ./exporter/exporter-brokers.yml:/opt/bitnami/jmx-exporter/exporter.yml
+    command:
+      - "5556"
+      - exporter.yml
+    ports:
+      - 5556:5556

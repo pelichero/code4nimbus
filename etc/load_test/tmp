@@ -1,0 +1,3 @@
+POST http://localhost:9001/product
+Content-Type: application/json
+@product.json

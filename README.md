@@ -51,6 +51,18 @@ This command will start the following services:
 - [Clojure API](#clojure-api) 
 - [Clojure Async](#clojure-async)
    
+## Some useful commands
+
+- Pre requisites:
+  - Install [jq](https://stedolan.github.io/jq/download/) to generate JSON payloads.
+  - Install [Vegeta](https://github.com/tsenart/vegeta) to generate load tests.
+
+- To produce some messages in Kafka:
+
+```sh
+cd etc/load_test && vegeta attack -targets=tmp -rate=10 -duration=60s | tee results.bin | vegeta report
+```
+
 ## Grafana
 
 Official Documentation: [Grafana](https://grafana.com/docs/grafana/latest/getting-started/getting-started-docker/)
@@ -202,6 +214,7 @@ Icons made by [Iconfinder](https://www.iconfinder.com/) and [Freepik](https://ww
 ## References
 
 https://github.com/demystifyfp/BlogSamples/blob/0.10/clojure/resultful-crud/src/resultful_crud/core.clj
+https://gsfl3101.medium.com/kafka-kraft-monitoring-with-prometheus-and-grafana-1994ef272f48
 
 ## Extra
 

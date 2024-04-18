@@ -11,5 +11,11 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
     - targets: ['clojure-api:9000']
-
-
+#  - job_name: 'kafka'
+#    static_configs:
+#      - targets: ['jmx-kafka:5556']
+  - job_name: "kafka"
+    static_configs:
+      - targets:
+        - jmx-exporter-broker:5556
+        - kafka-exporter:9308
