@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/etc/jmx_exporter/config_kafka_old.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exporter/exporter-brokers.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/jmx_exporter/config_kafka.yml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/jmx_exporter/config_kafka.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grafana/data/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/data/grafana.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prometheus/config/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus/config/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/tmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +66,17 @@
     "Docker.docker-compose.yml.conduktor-platform: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.datomic-transactor: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.grafana: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.jmx-exporter-broker: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.jmx-exporter-controller: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.jmx-kafka: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafdrop: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka-exporter: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.kafka-schema-registry: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.kafka1: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.kafka: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.lenses: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.prometheus: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.server-app: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.zoo1: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
@@ -84,7 +89,7 @@
     "git-widget-placeholder": "kafka-logs",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/bin",
+    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/etc/load_test",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.11428571",
@@ -93,22 +98,22 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etc/load_test" />
       <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/etc/jmx_exporter" />
       <recent name="$PROJECT_DIR$/grafana" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/clojure-async" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etc/load_test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/images" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/clojure-api/test" />
-      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi" />
     </key>
   </component>
   <component name="ReplState" timestamp="1710849148871">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.lenses: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.prometheus: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -184,20 +189,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.grafana: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.jmx-exporter-broker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="grafana" />
+              <option value="jmx-exporter-broker" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -205,12 +202,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.jmx-kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.kafdrop: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="jmx-kafka" />
+              <option value="kafdrop" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -218,12 +215,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.kafka-exporter: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="kafka" />
+              <option value="kafka-exporter" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -244,20 +241,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.prometheus: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="prometheus" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.jmx-exporter-broker: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafdrop: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafka-exporter: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.lenses: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.jmx-kafka: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.grafana: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.jmx-exporter-broker: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka-exporter: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.lenses: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.jmx-kafka: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.grafana: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafdrop: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

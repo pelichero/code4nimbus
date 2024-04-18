@@ -60,7 +60,7 @@ This command will start the following services:
 - To produce some messages in Kafka:
 
 ```sh
-vegeta attack -targets=tmp -rate=1 -duration=5s | tee results.bin | vegeta report
+cd etc/load_test && vegeta attack -targets=tmp -rate=10 -duration=60s | tee results.bin | vegeta report
 ```
 
 ## Grafana
