@@ -118,7 +118,7 @@
      (prometheus/with-duration
        (prometheus-registry :code4nimbus-clojureapi/update-product-seconds)
        (update-product! (datomic.db/get-conn) (assoc update-product-req :id id))))
-   (PUT "/generate-random/:num" []
+   (PUT "/product/generate-random/:num" []
      :path-params [num :- Long]
      (prometheus/with-duration
        (prometheus-registry :code4nimbus-clojureapi/generate-random-products-seconds)

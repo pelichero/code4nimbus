@@ -49,17 +49,17 @@ services:
     links:
       - datomic-transactor
 
-#  jmx-kafka:
-#    image: "sscaling/jmx-prometheus-exporter"
-#    ports:
-#      - "5556:5556"
-#    environment:
-#      CONFIG_YML: "/etc/jmx_exporter/config.yml"
-#    volumes:
-#      - ./etc/jmx_exporter/config_kafka.yml:/etc/jmx_exporter/config.yml
-#    container_name: jmx-kafka
-#    depends_on:
-#      - kafka
+  jmx-kafka-cluster:
+    image: "sscaling/jmx-prometheus-exporter"
+    ports:
+      - "5566:5556"
+    environment:
+      CONFIG_YML: "/etc/jmx_exporter/config.yml"
+    volumes:
+      - ./etc/jmx_exporter/config_kafka.yml:/etc/jmx_exporter/config.yml
+    container_name: jmx-kafka-cluster
+    depends_on:
+      - kafka
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
@@ -132,6 +132,8 @@ services:
       - "--kafka.server=kafka:9092"
     ports:
       - 9308:9308
+    depends_on:
+      - kafka
 
   jmx-exporter-broker:
     container_name: jmx-exporter-broker
@@ -143,3 +145,5 @@ services:
       - exporter.yml
     ports:
       - 5556:5556
+    depends_on:
+      - kafka

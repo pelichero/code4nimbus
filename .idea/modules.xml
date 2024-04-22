@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/clojure-api/clojure-api.iml" filepath="$PROJECT_DIR$/clojure-api/clojure-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure-api-bff/clojure-api-bff.iml" filepath="$PROJECT_DIR$/clojure-api-bff/clojure-api-bff.iml" />
       <module fileurl="file://$PROJECT_DIR$/clojure-async/clojure-async.iml" filepath="$PROJECT_DIR$/clojure-async/clojure-async.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/code4nimbus.iml" filepath="$PROJECT_DIR$/.idea/code4nimbus.iml" />
       <module fileurl="file://$PROJECT_DIR$/datomic-database/datomic-database.iml" filepath="$PROJECT_DIR$/datomic-database/datomic-database.iml" />
