@@ -18,7 +18,7 @@ type Repository = {
 
 export function App() {
 
-  const [repositories, setRepositories] = useState<Repository[]>([])
+  const [products, setRepositories] = useState<Repository[]>([])
   
   useEffect(() => {
     axios.get('http://localhost:9000/products' , 
@@ -68,6 +68,10 @@ export function App() {
                 <Label htmlFor="price">Price</Label>
                 <Input className="col-span-3" placeholder="Product price" id="price"/>
               </div>
+              <div className="grid grid-cols-6 items-center text-right gap-3">
+                <Label htmlFor="slug">Slug</Label>
+                <Input className="col-span-3" placeholder="Product slug" id="slug"/>
+              </div>
               <DialogFooter>
                 <DialogClose asChild>
                   <Button type="button" variant="outline">Cancel</Button>
@@ -89,14 +93,16 @@ export function App() {
               <TableHead>Price</TableHead>
             </TableHeader>
             <TableBody>
-            {repositories.map(repository => (
-              <TableRow key={repository.id}>
-                <TableCell>{repository.id}</TableCell>
-                <TableCell>{repository.name}</TableCell>
-                <TableCell>{repository.price}</TableCell>
-                <TableCell>{repository.slug}</TableCell>
-              </TableRow>
-            ))}
+            {
+              products.map(product => (
+                <TableRow key={product.id}>
+                  <TableCell>{product.id}</TableCell>
+                  <TableCell>{product.name}</TableCell>
+                  <TableCell>{product.slug}</TableCell>
+                  <TableCell>{product.price}</TableCell>
+                </TableRow>
+              ))
+            }
             </TableBody>  
           </Table>
       </div>
