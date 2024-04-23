@@ -28,7 +28,7 @@
   [conn
    product :- wire.in.product/Product]
   {:status  200
-   :headers {"Content-Type" "text/html"}
+   :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
    :body    (-> (adapters.product/wire->domain product)
                 (controller.product/add! conn)
                 (adapters.product/domain->wire)
@@ -38,7 +38,7 @@
   [conn
    product :- wire.in.product/ProductUpdate]
   {:status  201
-   :headers {"Content-Type" "text/html"}
+   :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
    :body    (-> (adapters.product/wire-update->domain product)
                 (controller.product/update! conn)
                 (adapters.product/domain->wire)
@@ -48,7 +48,7 @@
   [conn]
   (let [products (controller.product/get-all conn)]
     {:status  200
-     :headers {"Content-Type" "text/html"}
+     :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 
@@ -57,7 +57,7 @@
    name]
   (let [products (controller.product/by-name conn name)]
     {:status  200
-     :headers {"Content-Type" "text/html"}
+     :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 
@@ -67,11 +67,11 @@
   (let [product (controller.product/by-id conn id)]
     (cond (nil? product)
           {:status  404
-           :headers {"Content-Type" "text/html"}
+           :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
            :body    "Product not found."}
           :else
           {:status  200
-           :headers {"Content-Type" "text/html"}
+           :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
            :body    (-> (adapters.product/domain->wire product)
                         (json/write-str))})))
 
@@ -80,7 +80,7 @@
    id]
   (controller.product/delete! conn id)
   {:status  204
-   :headers {"Content-Type" "text/html"}
+   :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
    :body    "Product deleted."})
 
 (s/defn ^:private generate-random-products!
@@ -88,7 +88,7 @@
    num]
   (let [products (controller.product/generate-random-products conn num)]
     {:status  201
-     :headers {"Content-Type" "text/html"}
+     :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 

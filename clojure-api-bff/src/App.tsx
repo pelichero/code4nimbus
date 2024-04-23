@@ -1,3 +1,4 @@
+import React from 'react'
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Search, PlusCircle } from "lucide-react"
@@ -17,9 +18,15 @@ type Repository = {
 
 export function App() {
 
-  const [repositories, setRepositories] = useState<Repository[]>([])
+  const [products, setRepositories] = useState<Repository[]>([])
+  
   useEffect(() => {
-    axios.get('http://localhost:9000/products')
+    axios.get('http://localhost:9000/products' , 
+    {
+      headers: {
+          'Content-Type': 'application/json'
+      }
+    })
       .then(response => setRepositories(response.data))
   } , [])
 
@@ -61,6 +68,10 @@ export function App() {
                 <Label htmlFor="price">Price</Label>
                 <Input className="col-span-3" placeholder="Product price" id="price"/>
               </div>
+              <div className="grid grid-cols-6 items-center text-right gap-3">
+                <Label htmlFor="slug">Slug</Label>
+                <Input className="col-span-3" placeholder="Product slug" id="slug"/>
+              </div>
               <DialogFooter>
                 <DialogClose asChild>
                   <Button type="button" variant="outline">Cancel</Button>
@@ -83,26 +94,15 @@ export function App() {
             </TableHeader>
             <TableBody>
             {
-            repositories.map(repository => (
-              <div key={repository.id}>
-                <h1>{repository.name}</h1>
-                <p>{repository.slug}</p>
-                <p>{repository.price}</p>
-              </div>
-            ))}
-
-
-                {
-                Array.from({ length: 10 }).map((_, i) => {
-                  return (
-                    <TableRow key={i}>
-                      <TableCell>{i}</TableCell>
-                      <TableCell>Product {i}</TableCell>
-                      <TableCell>U$ 100,00</TableCell>
-                      <TableCell>/product/{i}</TableCell>
-                    </TableRow>
-                  )
-                })}
+              products.map(product => (
+                <TableRow key={product.id}>
+                  <TableCell>{product.id}</TableCell>
+                  <TableCell>{product.name}</TableCell>
+                  <TableCell>{product.slug}</TableCell>
+                  <TableCell>{product.price}</TableCell>
+                </TableRow>
+              ))
+            }
             </TableBody>  
           </Table>
       </div>
