@@ -48,7 +48,7 @@
   [conn]
   (let [products (controller.product/get-all conn)]
     {:status  200
-     :headers {"Content-Type" "text/html"}
+     :headers {"Content-Type" "text/html", "Access-Control-Allow-Origin" "*"}
      :body    (-> (map adapters.product/domain->wire products)
                   (json/write-str))}))
 

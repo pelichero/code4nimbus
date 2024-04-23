@@ -1,3 +1,4 @@
+import React from 'react'
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Search, PlusCircle } from "lucide-react"
@@ -18,8 +19,14 @@ type Repository = {
 export function App() {
 
   const [repositories, setRepositories] = useState<Repository[]>([])
+  
   useEffect(() => {
-    axios.get('http://localhost:9000/products')
+    axios.get('http://localhost:9000/products' , 
+    {
+      headers: {
+          'Content-Type': 'application/json'
+      }
+    })
       .then(response => setRepositories(response.data))
   } , [])
 
@@ -82,27 +89,14 @@ export function App() {
               <TableHead>Price</TableHead>
             </TableHeader>
             <TableBody>
-            {
-            repositories.map(repository => (
-              <div key={repository.id}>
-                <h1>{repository.name}</h1>
-                <p>{repository.slug}</p>
-                <p>{repository.price}</p>
-              </div>
+            {repositories.map(repository => (
+              <TableRow key={repository.id}>
+                <TableCell>{repository.id}</TableCell>
+                <TableCell>{repository.name}</TableCell>
+                <TableCell>{repository.price}</TableCell>
+                <TableCell>{repository.slug}</TableCell>
+              </TableRow>
             ))}
-
-
-                {
-                Array.from({ length: 10 }).map((_, i) => {
-                  return (
-                    <TableRow key={i}>
-                      <TableCell>{i}</TableCell>
-                      <TableCell>Product {i}</TableCell>
-                      <TableCell>U$ 100,00</TableCell>
-                      <TableCell>/product/{i}</TableCell>
-                    </TableRow>
-                  )
-                })}
             </TableBody>  
           </Table>
       </div>

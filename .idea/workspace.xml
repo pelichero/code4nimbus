@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api-bff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api-bff/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api-bff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api-bff/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api-bff/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api-bff/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api-bff/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api-bff/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api-bff/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api-bff/src/main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/load_test/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/etc/load_test/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grafana/data/grafana.db" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/data/grafana.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus/config/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus/config/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src": "clj",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src": "clj",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "add-frontend",
+    "git-widget-placeholder": "frontednd",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus",
@@ -117,7 +109,7 @@
     </key>
   </component>
   <component name="ReplState" timestamp="1710849148871">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.jmx-kafka-cluster: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.clojure-api: Compose Deployment">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -193,12 +185,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.jmx-exporter-broker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.clojure-api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="jmx-exporter-broker" />
+              <option value="clojure-api" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -259,19 +251,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jmx-kafka-cluster: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jmx-kafka: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.jmx-exporter-broker: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.kafka-exporter: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.jmx-kafka-cluster: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-exporter: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.jmx-kafka: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.jmx-exporter-broker: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
