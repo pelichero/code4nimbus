@@ -43,6 +43,7 @@ services:
       - "9001:9001"
     depends_on:
       - kafka
+      - zookeeper
 
   datomic-tools:
     build: datomic-database/docker/tools
@@ -60,6 +61,7 @@ services:
     container_name: jmx-kafka-cluster
     depends_on:
       - kafka
+      - zookeeper
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
@@ -106,6 +108,13 @@ services:
     image: prom/prometheus:v2.4.0
     volumes:
       - ./prometheus/config:/etc/prometheus
+    depends_on:
+      - kafka
+      - zookeeper
+      - jmx-exporter-broker
+      - kafka-exporter
+      - grafana
+      - jmx-kafka-cluster
     ports:
       - 9090:9090
 
@@ -134,6 +143,7 @@ services:
       - 9308:9308
     depends_on:
       - kafka
+      - zookeeper
 
   jmx-exporter-broker:
     container_name: jmx-exporter-broker
@@ -147,3 +157,4 @@ services:
       - 5556:5556
     depends_on:
       - kafka
+      - zookeeper
