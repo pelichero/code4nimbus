@@ -113,7 +113,6 @@ services:
       - zookeeper
       - jmx-exporter-broker
       - kafka-exporter
-      - grafana
       - jmx-kafka-cluster
     ports:
       - 9090:9090
