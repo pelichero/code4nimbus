@@ -15,12 +15,15 @@ The repository is organized into the following sections:
 
 - `clojure-api`: Contains Web API projects built with Clojure.
 - `clojure-async`: Includes asynchronous Clojure applications that interact with Kafka.
+- `clojure-api-bff` : Includes a Clojure API that acts as a BFF (Backend for Frontend) for the Clojure Async application.
 - `datomic-datbase`: Includes a sample Datomic database and tools to interact with it.
   - `datomic-console`: Contains Datomic Console configuration files.
 - `kafka`: Contains Kafka configuration files and scripts.
   - `zookeeper`: Contains Zookeeper configuration files.
   - `kafka-ui`: Includes a Kafka UI tool to visualize topics and messages.
 - `prometheus`: Contains Prometheus configuration files.
+  - `kafka-exporter`: Contains Kafka exporter configuration files.
+  - `jmx-exporter`: Contains JMX exporter configuration files.
 - `grafana`: Contains Grafana configuration files.`
 
 # How to put thing up!.
