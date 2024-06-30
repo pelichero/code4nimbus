@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/aux/init.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/test/integration/clojureapi/aux/init.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Clojure Test Namespace" />
         <option value="Clojure Namespace" />
       </list>
     </option>
@@ -28,12 +31,12 @@
     &quot;assignee&quot;: &quot;pelichero&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/pelichero/code4nimbus.git",
-    "accountId": "996aded4-448c-4efa-849d-e6ca6183f69d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pelichero/code4nimbus.git&quot;,
+    &quot;accountId&quot;: &quot;c934f430-f779-4644-836b-6b2a3fcdd36e&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -80,13 +83,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/src": "clj",
+    "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-api/test": "clj",
     "cursive.last.file.extension./Users/fepelichero/Downloads/projects/versioned-3/code4nimbus/clojure-async/src": "clj",
     "dart.analysis.tool.window.visible": "false",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "component-injection",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/felipe.pelichero/Documents/projects/studies/code4nimbus",
+    "last_opened_file_path": "/Users/fepelichero/Downloads/projects/versioned-3/code4nimbus",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.11428571",
@@ -102,15 +106,55 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus" />
+      <recent name="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components" />
       <recent name="$PROJECT_DIR$/etc/load_test" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources/images" />
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/clojure-api/test" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1710849148871">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.prometheus: Compose Deployment">
+  <component name="ReplState" timestamp="1719765505486">{:repl-history {:ide [], :local [{:command &quot;(-main)&quot;, :offset 6, :ns &quot;com.code4nimbus.clojureapi.core&quot;}], :remote []}}</component>
+  <component name="RunManager" selected="Clojure REPL.REPL for clojure-api">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="REPL for clojure-api" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <option name="configVersion" value="1" />
+      <option name="displayName" value="REPL for clojure-api" />
+      <option name="execution" value="LEININGEN" />
+      <module name="clojure-api" />
+      <option name="options" />
+      <option name="profiles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clojure-api" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <option name="configVersion" value="1" />
+      <option name="options" />
+      <option name="profiles" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <setting name="urlFile" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="aws.lambda" factoryName="Local">
       <option name="credentialProviderId" />
       <option name="regionId" />
@@ -150,47 +194,9 @@
       <option name="inputIsFile" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="bbPath" value="" />
-      <setting name="parameters" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <setting name="workingDir" value="" />
-      <setting name="focusEditor" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <option name="configVersion" value="1" />
-      <option name="options" />
-      <option name="profiles" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="host" value="" />
-      <setting name="port" value="0" />
-      <setting name="replType" value="SOCKET" />
-      <setting name="configType" value="SPECIFY" />
-      <setting name="replPortFileType" value="STANDARD" />
-      <setting name="customPortFile" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <setting name="focusEditor" value="false" />
-      <setting name="urlFile" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -247,7 +253,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Clojure REPL.REPL for clojure-api" />
       <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jmx-kafka-cluster: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
@@ -255,11 +261,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Clojure REPL.REPL for clojure-api" />
         <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-exporter: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.jmx-kafka-cluster: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.clojure-api: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
