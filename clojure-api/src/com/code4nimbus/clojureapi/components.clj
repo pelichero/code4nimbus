@@ -17,3 +17,10 @@
         :app (component/using
                (components.app/map->WebServer {})
                [:db]))))
+
+(defn system-test []
+  (-> (component/system-map
+        :db (components.database/new-database)
+        :app (component/using
+               (components.app/map->WebServer {})
+               [:db]))))
