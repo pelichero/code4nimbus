@@ -7,8 +7,7 @@
             [iapetos.collector.jvm :as jvm]
             [iapetos.collector.ring :as ring]
             [clojure.data.json :as json]
-            [schema.core :as s])
-  (:import (com.code4nimbus.clojureapi.components.database Database)))
+            [schema.core :as s]))
 (import java.util.Date)
 
 (defonce prometheus-registry
@@ -93,7 +92,7 @@
                   (json/write-str))}))
 
 (s/defn product-routes
-  [{:keys [connection]} :- Database]
+  [{:keys [connection]}]
   [(GET "/product/:id" []
      :path-params [id :- Long]
      (prometheus/with-duration
