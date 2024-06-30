@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cf0dda33-50f5-4858-bf66-4ce66df6359b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/http_server.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components/message.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/components/message.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/diplomat/consumer.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clojure-api/src/com/code4nimbus/clojureapi/logic/misc.clj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Clojure Namespace" />
         <option value="Clojure Test Namespace" />
+        <option value="Clojure Namespace" />
       </list>
     </option>
   </component>
@@ -112,7 +115,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1719754709959">{:repl-history {:ide [], :local [{:command &quot;(-main)&quot;, :offset 6, :ns &quot;com.code4nimbus.clojureapi.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1719759333403">{:repl-history {:ide [], :local [{:command &quot;(-main)&quot;, :offset 6, :ns &quot;com.code4nimbus.clojureapi.core&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for clojure-api">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
