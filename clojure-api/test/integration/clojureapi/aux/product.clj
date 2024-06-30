@@ -2,11 +2,13 @@
   (:require [clojure.data.json :as json]
             [clojure.test :refer :all]
             [clojure.walk :refer [keywordize-keys]]
+            [integration.clojureapi.aux.init :refer [start-system-map]]
             [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
             [compojure.api.sweet :refer [api routes]]
             [peridot.core :refer :all]))
 
-(def app (api (apply routes product-routes)))
+(def app (api (apply routes (product-routes (-> (start-system-map)
+                                                :db)))))
 
 (defn get-products
   []
