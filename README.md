@@ -9,6 +9,11 @@
 
 Welcome to my monorepo project dedicated to exploring Clojure and Datomic while leveraging Docker and Kafka technologies. This repository documents my study path and progress as I delve into these exciting areas of software development.
 
+## Some articles I wrote
+
+- [Dependency injection with Clojure](https://medium.com/@felipepelichero/dependency-injection-with-clojure-6ee5dc839c08)
+- [Dockerized Clojure API + Datomic](https://medium.com/@xsquarenix/dockerized-clojure-api-datomic-06b37967feeb)
+
 ## Project Structure
 
 The repository is organized into the following sections:
