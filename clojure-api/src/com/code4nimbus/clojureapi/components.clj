@@ -5,9 +5,12 @@
             [com.code4nimbus.clojureapi.diplomat.consumer :refer [product-handler]]
             [com.stuartsierra.component :as component]))
 
+(def datomic-uri (or (System/getenv "DATOMIC_URL")
+                     "datomic:mem://product"))
+
 (defn system []
   (-> (component/system-map
-        :db (components.database/new-database)
+        :db (components.database/map->Database {:uri datomic-uri})
         :product-consumer (component/using
                             (components.message/map->Kafka {:topic            "product"
                                                             :bootstrap-server (or (System/getenv "BOOTSTRAP_SERVER")
@@ -20,7 +23,7 @@
 
 (defn system-test []
   (-> (component/system-map
-        :db (components.database/new-database)
+        :db (components.database/map->Database {:uri datomic-uri})
         :app (component/using
                (components.app/map->WebServer {})
                [:db]))))
