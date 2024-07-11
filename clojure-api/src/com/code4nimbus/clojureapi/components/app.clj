@@ -1,6 +1,7 @@
 (ns com.code4nimbus.clojureapi.components.app
   (:require [clojure.tools.logging :as log]
-            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes prometheus-registry]]
+            [com.code4nimbus.clojureapi.diplomat.http-server :refer [product-routes]]
+            [com.code4nimbus.clojureapi.logic.metrics :refer [prometheus-registry]]
             [com.stuartsierra.component :as component]
             [compojure.api.sweet :refer [api routes]]
             [iapetos.collector.ring :as ring]
