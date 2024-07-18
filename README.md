@@ -11,8 +11,9 @@ Welcome to my monorepo project dedicated to exploring Clojure and Datomic while 
 
 ## Some articles I wrote
 
-- [Dependency injection with Clojure](https://medium.com/@felipepelichero/dependency-injection-with-clojure-6ee5dc839c08)
 - [Dockerized Clojure API + Datomic](https://medium.com/@xsquarenix/dockerized-clojure-api-datomic-06b37967feeb)
+- [Dependency injection with Clojure](https://medium.com/@felipepelichero/dependency-injection-with-clojure-6ee5dc839c08)
+- [Writing a Kafka consumer with Clojure](https://medium.com/@felipepelichero/writing-a-kafka-consumer-with-clojure-6abcd4f58919)
 
 ## Project Structure
 
