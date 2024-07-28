@@ -1,27 +1,13 @@
 (ns com.code4nimbus.clojureapi.diplomat.http-server
-  (:require [compojure.api.sweet :refer :all]
-            [com.code4nimbus.clojureapi.controller.product :as controller.product]
-            [com.code4nimbus.clojureapi.wire.in.product :as wire.in.product]
+  (:require [clojure.data.json :as json]
             [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
+            [com.code4nimbus.clojureapi.controller.product :as controller.product]
+            [com.code4nimbus.clojureapi.logic.metrics :refer [prometheus-registry]]
+            [com.code4nimbus.clojureapi.wire.in.product :as wire.in.product]
+            [compojure.api.sweet :refer :all]
             [iapetos.core :as prometheus]
-            [iapetos.collector.jvm :as jvm]
-            [iapetos.collector.ring :as ring]
-            [clojure.data.json :as json]
             [schema.core :as s]))
 (import java.util.Date)
-
-(defonce prometheus-registry
-         (-> (prometheus/collector-registry)
-             jvm/initialize
-             ring/initialize
-             (prometheus/register
-               (prometheus/summary :code4nimbus-clojureapi/product-by-id-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/get-all-products-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/products-by-params-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/add-product-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/update-product-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/delete-product-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/generate-random-products-seconds))))
 
 (s/defn ^:private add-product!
   [conn
