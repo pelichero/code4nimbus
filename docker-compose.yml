@@ -84,7 +84,7 @@ services:
       CONFLUENT_METRICS_ENABLE: 'true'
 
   zookeeper:
-    image: bitnami/zookeeper:latest
+    image: bitnamilegacy/zookeeper:latest
     ports:
       - 2181:2181
     environment:
@@ -135,7 +135,7 @@ services:
 
   kafka-exporter:
     container_name: kafka-exporter
-    image: bitnami/kafka-exporter:1.7.0
+    image: bitnamilegacy/kafka-exporter-archived:latest
     command:
       - "--kafka.server=kafka:9092"
     ports:
@@ -146,7 +146,7 @@ services:
 
   jmx-exporter-broker:
     container_name: jmx-exporter-broker
-    image: bitnami/jmx-exporter:0.20.0
+    image: bitnamilegacy/jmx-exporter:latest
     volumes:
       - ./exporter/exporter-brokers.yml:/opt/bitnami/jmx-exporter/exporter.yml
     command:
