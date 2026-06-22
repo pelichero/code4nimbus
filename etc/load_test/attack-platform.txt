@@ -1,0 +1,1 @@
+GET http://localhost:9000/load?mode=platform&tasks=500&sleepMs=200

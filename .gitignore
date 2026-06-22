@@ -1,2 +1,5 @@
 /.idea/
 /datomic-database/docker/tools/.cpcache/
+/.claude/
+**/.clj-kondo/
+etc/load_test/*.bin
