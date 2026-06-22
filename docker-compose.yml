@@ -27,8 +27,27 @@ services:
     environment:
       DATOMIC_URL: datomic:dev://datomic-transactor:4334/product/?password=unsafe
       BOOTSTRAP_SERVER: kafka:9092
+      THREAD_MODE: platform
+    cpus: 1.0
     ports:
       - "9000:9000"
+    depends_on:
+      - kafka
+      - prometheus
+
+  clojure-api-vt:
+    build: clojure-api
+    links:
+      - prometheus
+      - datomic-transactor
+      - kafka
+    environment:
+      DATOMIC_URL: datomic:dev://datomic-transactor:4334/product/?password=unsafe
+      BOOTSTRAP_SERVER: kafka:9092
+      THREAD_MODE: virtual
+    cpus: 1.0
+    ports:
+      - "9002:9000"
     depends_on:
       - kafka
       - prometheus
@@ -116,6 +135,21 @@ services:
       - jmx-kafka-cluster
     ports:
       - 9090:9090
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    container_name: cadvisor
+    privileged: true
+    ports:
+      - "8081:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - prometheus
 
   grafana:
     image: grafana/grafana:9.5.12

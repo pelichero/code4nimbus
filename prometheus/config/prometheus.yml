@@ -11,6 +11,14 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
     - targets: ['clojure-api:9000']
+  - job_name: 'clojure-api-vt'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['clojure-api-vt:9000']
+  - job_name: 'cadvisor'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['cadvisor:8080']
   - job_name: 'kafka-cluster'
     static_configs:
       - targets: ['jmx-kafka-cluster:5566']

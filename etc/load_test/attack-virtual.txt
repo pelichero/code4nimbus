@@ -1,0 +1,1 @@
+GET http://localhost:9002/load?mode=virtual&tasks=500&sleepMs=200
