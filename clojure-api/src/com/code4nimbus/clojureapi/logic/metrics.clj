@@ -15,4 +15,8 @@
                (prometheus/summary :code4nimbus-clojureapi/add-product-seconds)
                (prometheus/summary :code4nimbus-clojureapi/update-product-seconds)
                (prometheus/summary :code4nimbus-clojureapi/delete-product-seconds)
-               (prometheus/summary :code4nimbus-clojureapi/generate-random-products-seconds))))
+               (prometheus/summary :code4nimbus-clojureapi/generate-random-products-seconds)
+               ;; Virtual-threads demo (see logic.loom): in-flight task count and
+               ;; per-batch wall-clock, both split by thread mode.
+               (prometheus/gauge :loom/inflight-tasks {:labels [:mode]})
+               (prometheus/summary :loom/batch-seconds {:labels [:mode]}))))

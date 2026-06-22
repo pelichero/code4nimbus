@@ -2,6 +2,7 @@
   (:require [clojure.data.json :as json]
             [com.code4nimbus.clojureapi.adapters.product :as adapters.product]
             [com.code4nimbus.clojureapi.controller.product :as controller.product]
+            [com.code4nimbus.clojureapi.logic.loom :as loom]
             [com.code4nimbus.clojureapi.logic.metrics :refer [prometheus-registry]]
             [com.code4nimbus.clojureapi.wire.in.product :as wire.in.product]
             [compojure.api.sweet :refer :all]
@@ -113,4 +114,13 @@
      :path-params [id :- Long]
      (prometheus/with-duration
        (prometheus-registry :code4nimbus-clojureapi/delete-product-seconds)
-       (delete-product! connection id)))])
+       (delete-product! connection id)))
+   ;; Virtual-threads demo: fan out `tasks` blocking jobs on a platform or
+   ;; virtual executor. `mode` defaults to this container's THREAD_MODE.
+   (GET "/load" []
+     :query-params [{mode :- String ""}
+                    {tasks :- Long 500}
+                    {sleepMs :- Long 200}]
+     {:status  200
+      :headers {"Content-Type" "application/json", "Access-Control-Allow-Origin" "*"}
+      :body    (json/write-str (loom/run-batch! mode tasks sleepMs))})])
