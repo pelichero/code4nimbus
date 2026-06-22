@@ -2,7 +2,6 @@ import React from 'react'
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Search, PlusCircle } from "lucide-react"
-import { useNavigate } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./components/ui/table";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog";
 import { Label } from "./components/ui/label";
@@ -36,7 +35,6 @@ export function App() {
   } , [])
 
   const [formData, setFormData] = useState(initialValue);
-  //const navigate = useNavigate();
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     
@@ -47,7 +45,7 @@ export function App() {
 
   }
 
-  function onSubmit(ev: React.FormEvent<HTMLInputElement>){
+  function onSubmit(ev: React.FormEvent<HTMLFormElement>){
 
     ev.preventDefault();
 
