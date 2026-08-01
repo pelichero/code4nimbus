@@ -1,7 +1,7 @@
 # Clojure and Datomic Studies with Docker and Kafka
 
 <p align="center">
-    <img alt="Clojure Icon" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/256px-Clojure_logo.svg.png?20161016020557" width="50"/>
+    <img alt="Clojure Icon" height="50" src="https://clojure.org/images/clojure-logo-120b.png" width="50"/>
     <img alt="Datomic Icon" height="50" src="https://www.datomic.com/images/datomic-logo-290x230.png" width="60"/>
     <img alt="Docker Icon" height="50" src="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png" width="60"/>
     <img alt="Kafka Icon" height="50" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_kafka_logo_icon_167866.png" width="100"/>
